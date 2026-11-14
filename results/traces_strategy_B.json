@@ -1,0 +1,1723 @@
+{
+  "strategy": "B",
+  "ingest_stats": {
+    "chunk_count": 349,
+    "total_chars": 223517,
+    "embed_time_s": 2.31,
+    "upsert_time_s": 2.02,
+    "total_ingest_time_s": 4.33,
+    "est_cost_usd": 0.001118
+  },
+  "summary": {
+    "dev": {
+      "total_queries": 15,
+      "hit_1_count": 9,
+      "hit_1_ratio": "9/15",
+      "hit_1_rate": 60.0,
+      "hit_3_count": 12,
+      "hit_3_ratio": "12/15",
+      "hit_3_rate": 80.0,
+      "filter_queries_count": 3,
+      "filter_compliance_ratio": "1/3"
+    },
+    "test": {
+      "total_queries": 5,
+      "hit_1_count": 4,
+      "hit_1_ratio": "4/5",
+      "hit_1_rate": 80.0,
+      "hit_3_count": 5,
+      "hit_3_ratio": "5/5",
+      "hit_3_rate": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliance_ratio": "1/2"
+    },
+    "all": {
+      "total_queries": 20,
+      "hit_1_count": 13,
+      "hit_1_ratio": "13/20",
+      "hit_1_rate": 65.0,
+      "hit_3_count": 17,
+      "hit_3_ratio": "17/20",
+      "hit_3_rate": 85.0,
+      "filter_queries_count": 5,
+      "filter_compliance_ratio": "2/5"
+    }
+  },
+  "traces": [
+    {
+      "question_id": "q01",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What are the three layers of any AI application stack according to Chip Huyen?",
+      "expected_answer": "The three layers are application development, model development, and infrastructure.",
+      "gold_page": 61,
+      "evidence_quote": "There are three layers to any AI application stack: application development, model development, and infrastructure.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p000",
+          "page": 61,
+          "score": 0.6753237,
+          "text": "Figure 1-13. Some companies have separate job descriptions for AI engineering, as\nshown in the job headlines on LinkedIn from December 17, 2023. Three Layers of the AI Stack\nThere are three layers to any AI application stack: application development, model\ndevelopment, and infrastructure. When developing an AI application, you’ll likely\nstart from the top layer and move down as needed:\nApplication development\nWith models readily available, anyone can use them to develop applications. This\nis the layer that has seen the most action in the last two years, and it is still rapidly evolving. Application development involves providing a model with good\nprompts and necessary context. This layer requires rigorous evaluation. Good\napplications also demand good interfaces.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 61,
+            "text": "Figure 1-13. Some companies have separate job descriptions for AI engineering, as\nshown in the job headlines on LinkedIn from December 17, 2023. Three Layers of the AI Stack\nThere are three layers to any AI application stack: application development, model\ndevelopment, and infrastructure. When developing an AI application, you’ll likely\nstart from the top layer and move down as needed:\nApplication development\nWith models readily available, anyone can use them to develop applications. This\nis the layer that has seen the most action in the last two years, and it is still rapidly evolving. Application development involves providing a model with good\nprompts and necessary context. This layer requires rigorous evaluation. Good\napplications also demand good interfaces.",
+            "chapter": 1,
+            "section": "ai_engineering_stack",
+            "char_count": 1248,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 773
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p62_p000",
+          "page": 62,
+          "score": 0.5916266,
+          "text": "These three layers and examples of responsibilities for each layer are shown in\nFigure 1-14. Figure 1-14. Three layers of the AI engineering stack. To get a sense of how the landscape has evolved with foundation models, in March\n2024, I searched GitHub for all AI-related repositories with at least 500 stars. Given\nthe prevalence of GitHub, I believe this data is a good proxy for understanding the\necosystem. In my analysis, I also included repositories for applications and models,\nwhich are the products of the application development and model development layers, respectively. I found a total of 920 repositories. Figure 1-15 shows the cumulative\nnumber of repositories in each category month-over-month. Figure 1-15. Cumulative count of repositories by category over time.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p62_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 62,
+            "text": "These three layers and examples of responsibilities for each layer are shown in\nFigure 1-14. Figure 1-14. Three layers of the AI engineering stack. To get a sense of how the landscape has evolved with foundation models, in March\n2024, I searched GitHub for all AI-related repositories with at least 500 stars. Given\nthe prevalence of GitHub, I believe this data is a good proxy for understanding the\necosystem. In my analysis, I also included repositories for applications and models,\nwhich are the products of the application development and model development layers, respectively. I found a total of 920 repositories. Figure 1-15 shows the cumulative\nnumber of repositories in each category month-over-month. Figure 1-15. Cumulative count of repositories by category over time.",
+            "chapter": 1,
+            "section": "ai_engineering_stack",
+            "char_count": 859,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 779
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p001",
+          "page": 61,
+          "score": 0.5616077,
+          "text": "Model development\nThis layer provides tooling for developing models, including frameworks for\nmodeling, training, finetuning, and inference optimization. Because data is central to model development, this layer also contains dataset engineering. Model\ndevelopment also requires rigorous evaluation. Infrastructure\nAt the bottom is the stack is infrastructure, which includes tooling for model\nserving, managing data and compute, and monitoring. The AI Engineering Stack | 37",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 61,
+            "text": "Model development\nThis layer provides tooling for developing models, including frameworks for\nmodeling, training, finetuning, and inference optimization. Because data is central to model development, this layer also contains dataset engineering. Model\ndevelopment also requires rigorous evaluation. Infrastructure\nAt the bottom is the stack is infrastructure, which includes tooling for model\nserving, managing data and compute, and monitoring. The AI Engineering Stack | 37",
+            "chapter": 1,
+            "section": "ai_engineering_stack",
+            "char_count": 1248,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 474
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q02",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "Why do language models use tokens as their unit instead of words or characters?",
+      "expected_answer": "Tokens allow the model to break words into meaningful components, compared to characters.",
+      "gold_page": 28,
+      "evidence_quote": "1. Compared to characters, tokens allow the model to break words into meaningful components.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p000",
+          "page": 28,
+          "score": 0.78458524,
+          "text": "3 Autoregressive language models are sometimes referred to as causal language models. Why do language models use token as their unit instead of word or\ncharacter? There are three main reasons:\n1. Compared to characters, tokens allow the model to break\nwords into meaningful components. For example, “cooking”\ncan be broken into “cook” and “ing”, with both components\ncarrying some meaning of the original word. 2. Because there are fewer unique tokens than unique words, this\nreduces the model’s vocabulary size, making the model more\nefficient (as discussed in Chapter 2). 3. Tokens also help the model process unknown words. For\ninstance, a made-up word like “chatgpting” could be split into\n“chatgpt” and “ing”, helping the model understand its structure.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 28,
+            "text": "3 Autoregressive language models are sometimes referred to as causal language models. Why do language models use token as their unit instead of word or\ncharacter? There are three main reasons:\n1. Compared to characters, tokens allow the model to break\nwords into meaningful components. For example, “cooking”\ncan be broken into “cook” and “ing”, with both components\ncarrying some meaning of the original word. 2. Because there are fewer unique tokens than unique words, this\nreduces the model’s vocabulary size, making the model more\nefficient (as discussed in Chapter 2). 3. Tokens also help the model process unknown words. For\ninstance, a made-up word like “chatgpting” could be split into\n“chatgpt” and “ing”, helping the model understand its structure.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2307,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 758
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p27_p001",
+          "page": 27,
+          "score": 0.6991985,
+          "text": "In the early days, a language model involved one language. However, today, a language model can involve multiple languages. The basic unit of a language model is token. A token can be a character, a word, or a\npart of a word (like -tion), depending on the model. 2 For example, GPT-4, a model\nbehind ChatGPT, breaks the phrase “I can’t wait to build AI applications” into nine\ntokens, as shown in Figure 1-1. Note that in this example, the word “can’t” is broken\ninto two tokens, can and ’t. You can see how different OpenAI models tokenize text\non the OpenAI website. Figure 1-1. An example of how GPT-4 tokenizes a phrase. The process of breaking the original text into tokens is called tokenization. For\nGPT-4, an average token is approximately ¾ the length of a word .",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p27_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 27,
+            "text": "In the early days, a language model involved one language. However, today, a language model can involve multiple languages. The basic unit of a language model is token. A token can be a character, a word, or a\npart of a word (like -tion), depending on the model. 2 For example, GPT-4, a model\nbehind ChatGPT, breaks the phrase “I can’t wait to build AI applications” into nine\ntokens, as shown in Figure 1-1. Note that in this example, the word “can’t” is broken\ninto two tokens, can and ’t. You can see how different OpenAI models tokenize text\non the OpenAI website. Figure 1-1. An example of how GPT-4 tokenizes a phrase. The process of breaking the original text into tokens is called tokenization. For\nGPT-4, an average token is approximately ¾ the length of a word .",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2050,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 772
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p001",
+          "page": 28,
+          "score": 0.66963303,
+          "text": "Tokens balance having fewer units than words while\nretaining more meaning than individual characters. There are two main types of language models: masked language models and autoregressive language models. They differ based on what information they can use to predict a token:\nMasked language model\nA masked language model is trained to predict missing tokens anywhere in a\nsequence, using the context from both before and after the missing tokens . In\nessence, a masked language model is trained to be able to fill in the blank. For\nexample, given the context, “My favorite __ is blue”, a masked language model\nshould predict that the blank is likely “color”. A well-known example of a\nmasked language model is bidirectional encoder representations from transformers, or BERT (Devlin et al., 2018).",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 28,
+            "text": "Tokens balance having fewer units than words while\nretaining more meaning than individual characters. There are two main types of language models: masked language models and autoregressive language models. They differ based on what information they can use to predict a token:\nMasked language model\nA masked language model is trained to predict missing tokens anywhere in a\nsequence, using the context from both before and after the missing tokens . In\nessence, a masked language model is trained to be able to fill in the blank. For\nexample, given the context, “My favorite __ is blue”, a masked language model\nshould predict that the blank is likely “color”. A well-known example of a\nmasked language model is bidirectional encoder representations from transformers, or BERT (Devlin et al., 2018).",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2307,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 799
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q03",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What is the primary role of post-training in foundation models?",
+      "expected_answer": "The goal of post-training is to align the model with human preferences.",
+      "gold_page": 74,
+      "evidence_quote": "The goal of post-training is to align the model with human preferences.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p73_p001",
+          "page": 73,
+          "score": 0.5765471,
+          "text": "With the growing lack of transparency in the training process of foundation models,\nit’s difficult to know all the design decisions that go into making a model. In general,\nhowever, differences in foundation models can be traced back to decisions about\ntraining data, model architecture and size, and how they are post-trained to align\nwith human preferences. Since models learn from data, their training data reveals a great deal about their capabilities and limitations. This chapter begins with how model developers curate training data, focusing on the distribution of training data. Chapter 8 explores dataset\nengineering techniques in detail, including data quality evaluation and data synthesis.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p73_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 73,
+            "text": "With the growing lack of transparency in the training process of foundation models,\nit’s difficult to know all the design decisions that go into making a model. In general,\nhowever, differences in foundation models can be traced back to decisions about\ntraining data, model architecture and size, and how they are post-trained to align\nwith human preferences. Since models learn from data, their training data reveals a great deal about their capabilities and limitations. This chapter begins with how model developers curate training data, focusing on the distribution of training data. Chapter 8 explores dataset\nengineering techniques in detail, including data quality evaluation and data synthesis.",
+            "chapter": 2,
+            "section": "training_data",
+            "char_count": 1925,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 702
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p102_p001",
+          "page": 102,
+          "score": 0.56440365,
+          "text": "The goal of post-training is to address both of these issues. Every model’s post-training is different. However, in general, post-training consists\nof two steps:\n1. Supervised finetuning (SFT): Finetune the pre-trained model on high-quality\ninstruction data to optimize models for conversations instead of completion. 2. Preference finetuning: Further finetune the model to output responses that align\nwith human preference. Preference finetuning is typically done with reinforcement learning (RL). 22 Techniques for preference finetuning include reinforcement learning from human feedback (RLHF) (used by GPT-3.5 and Llama 2 ),\nDPO (Direct Preference Optimization) (used by Llama 3 ), and reinforcement\nlearning from AI feedback (RLAIF) (potentially used by Claude).",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p102_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 102,
+            "text": "The goal of post-training is to address both of these issues. Every model’s post-training is different. However, in general, post-training consists\nof two steps:\n1. Supervised finetuning (SFT): Finetune the pre-trained model on high-quality\ninstruction data to optimize models for conversations instead of completion. 2. Preference finetuning: Further finetune the model to output responses that align\nwith human preference. Preference finetuning is typically done with reinforcement learning (RL). 22 Techniques for preference finetuning include reinforcement learning from human feedback (RLHF) (used by GPT-3.5 and Llama 2 ),\nDPO (Direct Preference Optimization) (used by Llama 3 ), and reinforcement\nlearning from AI feedback (RLAIF) (potentially used by Claude).",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2617,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 767
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p136_p001",
+          "page": 136,
+          "score": 0.5591803,
+          "text": "Evaluation for foundation models is so crucial that I dedicated two chapters to it,\nstarting with the next chapter. 112 | Chapter 2: Understanding Foundation Models",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p136_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 136,
+            "text": "Evaluation for foundation models is so crucial that I dedicated two chapters to it,\nstarting with the next chapter. 112 | Chapter 2: Understanding Foundation Models",
+            "chapter": 2,
+            "section": "probabilistic_nature_of_ai",
+            "char_count": 855,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 164
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q04",
+      "split": "dev",
+      "type": "truc_tiep",
+      "question": "What is top-k sampling designed to achieve during text generation?",
+      "expected_answer": "Top-k is a sampling strategy to reduce computation workload without sacrificing too much response diversity.",
+      "gold_page": 118,
+      "evidence_quote": "Top-k is a sampling strategy to reduce the computation workload without sacrificing too much of the model’s response diversity.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+          "page": 118,
+          "score": 0.6814988,
+          "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 746
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+          "page": 118,
+          "score": 0.66291827,
+          "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 795
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+          "page": 119,
+          "score": 0.57131743,
+          "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 119,
+            "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 1637,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 751
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q05",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "In what way does adapting an existing foundation model compare in effort to training one from scratch?",
+      "expected_answer": "Adapting an existing model is much easier and faster, taking ten examples and one weekend versus 1 million examples and six months.",
+      "gold_page": 36,
+      "evidence_quote": "Adapting an existing powerful model to your task is generally a lot easier than building a model for your task from scratch—for example, ten examples and one weekend versus 1 million examples and six months.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p135_p001",
+          "page": 135,
+          "score": 0.6689769,
+          "text": "Since most people will be using ready-made foundation models instead of training\none from scratch, I skipped the nitty-gritty training details in favor of modeling factors that help you determine what models to use and how to use them. A crucial factor affecting a model’s performance is its training data. Large models\nrequire a large amount of training data, which can be expensive and time-consuming\nto acquire. Model providers, therefore, often leverage whatever data is available. This\nleads to models that can perform well on the many tasks present in the training data,\nwhich may not include the specific task you want.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p135_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 135,
+            "text": "Since most people will be using ready-made foundation models instead of training\none from scratch, I skipped the nitty-gritty training details in favor of modeling factors that help you determine what models to use and how to use them. A crucial factor affecting a model’s performance is its training data. Large models\nrequire a large amount of training data, which can be expensive and time-consuming\nto acquire. Model providers, therefore, often leverage whatever data is available. This\nleads to models that can perform well on the many tasks present in the training data,\nwhich may not include the specific task you want.",
+            "chapter": 2,
+            "section": "probabilistic_nature_of_ai",
+            "char_count": 2945,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 626
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p36_p000",
+          "page": 36,
+          "score": 0.65146303,
+          "text": "Adapting an existing powerful model to your task is generally a lot easier than building a model for your task from scratch—for example, ten examples and one weekend\nversus 1 million examples and six months. Foundation models make it cheaper to\ndevelop AI applications and reduce time to market. Exactly how much data is needed\nto adapt a model depends on what technique you use. This book will also touch on\nthis question when discussing each technique. However, there are still many benefits\nto task-specific models, for example, they might be a lot smaller, making them faster\nand cheaper to use. Whether to build your own model or leverage an existing one is a classic buy-orbuild question that teams will have to answer for themselves.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p36_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 36,
+            "text": "Adapting an existing powerful model to your task is generally a lot easier than building a model for your task from scratch—for example, ten examples and one weekend\nversus 1 million examples and six months. Foundation models make it cheaper to\ndevelop AI applications and reduce time to market. Exactly how much data is needed\nto adapt a model depends on what technique you use. This book will also touch on\nthis question when discussing each technique. However, there are still many benefits\nto task-specific models, for example, they might be a lot smaller, making them faster\nand cheaper to use. Whether to build your own model or leverage an existing one is a classic buy-orbuild question that teams will have to answer for themselves.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2631,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 740
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p73_p001",
+          "page": 73,
+          "score": 0.5989047,
+          "text": "With the growing lack of transparency in the training process of foundation models,\nit’s difficult to know all the design decisions that go into making a model. In general,\nhowever, differences in foundation models can be traced back to decisions about\ntraining data, model architecture and size, and how they are post-trained to align\nwith human preferences. Since models learn from data, their training data reveals a great deal about their capabilities and limitations. This chapter begins with how model developers curate training data, focusing on the distribution of training data. Chapter 8 explores dataset\nengineering techniques in detail, including data quality evaluation and data synthesis.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p73_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 73,
+            "text": "With the growing lack of transparency in the training process of foundation models,\nit’s difficult to know all the design decisions that go into making a model. In general,\nhowever, differences in foundation models can be traced back to decisions about\ntraining data, model architecture and size, and how they are post-trained to align\nwith human preferences. Since models learn from data, their training data reveals a great deal about their capabilities and limitations. This chapter begins with how model developers curate training data, focusing on the distribution of training data. Chapter 8 explores dataset\nengineering techniques in detail, including data quality evaluation and data synthesis.",
+            "chapter": 2,
+            "section": "training_data",
+            "char_count": 1925,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 702
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q06",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "How does nucleus sampling differ dynamically from top-k sampling?",
+      "expected_answer": "Top-p (nucleus sampling) allows for a more dynamic selection of candidate values to sample from.",
+      "gold_page": 118,
+      "evidence_quote": "Top-p, also known as nucleus sampling, allows for a more dynamic selection of values to be sampled from.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+          "page": 118,
+          "score": 0.57963324,
+          "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 746
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+          "page": 118,
+          "score": 0.4975044,
+          "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 795
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p112_p001",
+          "page": 112,
+          "score": 0.45723695,
+          "text": "For example,\nStitch Fix and Grab find that having the reward model alone is good enough for their\napplications. They get their models to generate multiple outputs and pick the ones\ngiven high scores by their reward models. This approach, often referred to as the best\nof N strategy, leverages how a model samples outputs to improve its performance. The next section will shed light on how best of N works. Sampling\nA model constructs its outputs through a process known as sampling. This section\ndiscusses different sampling strategies and sampling variables, including temperature,\ntop-k, and top-p. It’ll then explore how to sample multiple outputs to improve a\nmodel’s performance.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p112_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 112,
+            "text": "For example,\nStitch Fix and Grab find that having the reward model alone is good enough for their\napplications. They get their models to generate multiple outputs and pick the ones\ngiven high scores by their reward models. This approach, often referred to as the best\nof N strategy, leverages how a model samples outputs to improve its performance. The next section will shed light on how best of N works. Sampling\nA model constructs its outputs through a process known as sampling. This section\ndiscusses different sampling strategies and sampling variables, including temperature,\ntop-k, and top-p. It’ll then explore how to sample multiple outputs to improve a\nmodel’s performance.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2546,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 684
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q07",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "In the AI engineering stack discussed in Chapter 1, which categories saw the highest increases in 2023?",
+      "expected_answer": "Applications and application development saw the highest increases in 2023.",
+      "gold_page": 63,
+      "evidence_quote": "In 2023, the categories that saw the highest increases were applications and application development.",
+      "filter": {
+        "chapter": 1,
+        "section": "ai_engineering_stack"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p63_p000",
+          "page": 63,
+          "score": 0.7014777,
+          "text": "The data shows a big jump in the number of AI toolings in 2023, after the introduction of Stable Diffusion and ChatGPT. In 2023, the categories that saw the highest\nincreases were applications and application development. The infrastructure layer\nsaw some growth, but it was much less than the growth seen in other layers. This is\nexpected. Even though models and applications have changed, the core infrastructural needs—resource management, serving, monitoring, etc.—remain the same. This brings us to the next point. While the level of excitement and creativity around\nfoundation models is unprecedented, many principles of building AI applications\nremain the same.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p63_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 63,
+            "text": "The data shows a big jump in the number of AI toolings in 2023, after the introduction of Stable Diffusion and ChatGPT. In 2023, the categories that saw the highest\nincreases were applications and application development. The infrastructure layer\nsaw some growth, but it was much less than the growth seen in other layers. This is\nexpected. Even though models and applications have changed, the core infrastructural needs—resource management, serving, monitoring, etc.—remain the same. This brings us to the next point. While the level of excitement and creativity around\nfoundation models is unprecedented, many principles of building AI applications\nremain the same.",
+            "chapter": 1,
+            "section": "ai_engineering_stack",
+            "char_count": 2811,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 668
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p000",
+          "page": 61,
+          "score": 0.67757225,
+          "text": "Figure 1-13. Some companies have separate job descriptions for AI engineering, as\nshown in the job headlines on LinkedIn from December 17, 2023. Three Layers of the AI Stack\nThere are three layers to any AI application stack: application development, model\ndevelopment, and infrastructure. When developing an AI application, you’ll likely\nstart from the top layer and move down as needed:\nApplication development\nWith models readily available, anyone can use them to develop applications. This\nis the layer that has seen the most action in the last two years, and it is still rapidly evolving. Application development involves providing a model with good\nprompts and necessary context. This layer requires rigorous evaluation. Good\napplications also demand good interfaces.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p61_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 61,
+            "text": "Figure 1-13. Some companies have separate job descriptions for AI engineering, as\nshown in the job headlines on LinkedIn from December 17, 2023. Three Layers of the AI Stack\nThere are three layers to any AI application stack: application development, model\ndevelopment, and infrastructure. When developing an AI application, you’ll likely\nstart from the top layer and move down as needed:\nApplication development\nWith models readily available, anyone can use them to develop applications. This\nis the layer that has seen the most action in the last two years, and it is still rapidly evolving. Application development involves providing a model with good\nprompts and necessary context. This layer requires rigorous evaluation. Good\napplications also demand good interfaces.",
+            "chapter": 1,
+            "section": "ai_engineering_stack",
+            "char_count": 1248,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 773
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p59_p003",
+          "page": 59,
+          "score": 0.66939414,
+          "text": "The AI Engineering Stack\nAI engineering’s rapid growth also induced an incredible amount of hype and FOMO\n(fear of missing out). The number of new tools, techniques, models, and applications\nintroduced every day can be overwhelming. Instead of trying to keep up with the\nconstantly shifting sand, let’s look into the fundamental building blocks of AI\nengineering. The AI Engineering Stack | 35",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p59_p003",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 59,
+            "text": "The AI Engineering Stack\nAI engineering’s rapid growth also induced an incredible amount of hype and FOMO\n(fear of missing out). The number of new tools, techniques, models, and applications\nintroduced every day can be overwhelming. Instead of trying to keep up with the\nconstantly shifting sand, let’s look into the fundamental building blocks of AI\nengineering. The AI Engineering Stack | 35",
+            "chapter": 1,
+            "section": "planning_ai_applications",
+            "char_count": 2633,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 3,
+            "char_length": 393
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q08",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "Why are recurrent neural networks particularly vulnerable to vanishing and exploding gradients?",
+      "expected_answer": "Because of their recursive structure requiring gradients to propagate through many steps.",
+      "gold_page": 83,
+      "evidence_quote": "RNNs are especially prone to vanishing and exploding gradients due to their recursive structure.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p83_p000",
+          "page": 83,
+          "score": 0.69613504,
+          "text": "6 RNNs are especially prone to vanishing and exploding gradients due to their recursive structure. Gradients\nmust be propagated through many steps, and if they are small, repeated multiplication causes them to shrink\ntoward zero, making it difficult for the model to learn. Conversely, if the gradients are large, they grow exponentially with each step, leading to instability in the learning process. Figure 2-4. Seq2seq architecture versus transformer architecture. For the transformer\narchitecture, the arrows show the tokens that the decoder attends to when generating\neach output token. There are two problems with seq2seq that Vaswani et al. (2017) addresses. First, the\nvanilla seq2seq decoder generates output tokens using only the final hidden state of\nthe input.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p83_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 83,
+            "text": "6 RNNs are especially prone to vanishing and exploding gradients due to their recursive structure. Gradients\nmust be propagated through many steps, and if they are small, repeated multiplication causes them to shrink\ntoward zero, making it difficult for the model to learn. Conversely, if the gradients are large, they grow exponentially with each step, leading to instability in the learning process. Figure 2-4. Seq2seq architecture versus transformer architecture. For the transformer\narchitecture, the arrows show the tokens that the decoder attends to when generating\neach output token. There are two problems with seq2seq that Vaswani et al. (2017) addresses. First, the\nvanilla seq2seq decoder generates output tokens using only the final hidden state of\nthe input.",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 1571,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 772
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p89_p000",
+          "page": 89,
+          "score": 0.43571752,
+          "text": "10 Fun fact: Ilya Sutskever, an OpenAI co-founder, is the first author on the seq2seq paper and the second\nauthor on the AlexNet paper. 11 Ilya Sutskever has an interesting argument about why it’s so hard to develop new neural network architectures to outperform existing ones. In his argument, neural networks are great at simulating many computer\nprograms. Gradient descent, a technique to train neural networks, is in fact a search algorithm to search\nthrough all the programs that a neural network can simulate to find the best one for its target task. This\nmeans that new architectures can potentially be simulated by existing ones too. For new architectures to outperform existing ones, these new architectures have to be able to simulate programs that existing architectures cannot.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p89_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 89,
+            "text": "10 Fun fact: Ilya Sutskever, an OpenAI co-founder, is the first author on the seq2seq paper and the second\nauthor on the AlexNet paper. 11 Ilya Sutskever has an interesting argument about why it’s so hard to develop new neural network architectures to outperform existing ones. In his argument, neural networks are great at simulating many computer\nprograms. Gradient descent, a technique to train neural networks, is in fact a search algorithm to search\nthrough all the programs that a neural network can simulate to find the best one for its target task. This\nmeans that new architectures can potentially be simulated by existing ones too. For new architectures to outperform existing ones, these new architectures have to be able to simulate programs that existing architectures cannot.",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 2807,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 789
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p99_p001",
+          "page": 99,
+          "score": 0.42003557,
+          "text": "Emergent abilities refer to those that are only present at scale might not be observable\non smaller models trained on smaller datasets. To learn more about scaling extrapolation, check out this excellent blog post: “On the Difficulty of Extrapolation with NN\nScaling” (Luke Metz, 2022). Scaling bottlenecks\nUntil now, every order of magnitude increase in model size has led to an increase in\nmodel performance. GPT-2 has an order of magnitude more parameters than GPT-1\n(1.5 billion versus 117 million). GPT-3 has two orders of magnitude more than\nGPT-2 (175 billion versus 1.5 billion). This means a three-orders-of-magnitude\nincrease in model sizes between 2018 and 2021.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p99_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 99,
+            "text": "Emergent abilities refer to those that are only present at scale might not be observable\non smaller models trained on smaller datasets. To learn more about scaling extrapolation, check out this excellent blog post: “On the Difficulty of Extrapolation with NN\nScaling” (Luke Metz, 2022). Scaling bottlenecks\nUntil now, every order of magnitude increase in model size has led to an increase in\nmodel performance. GPT-2 has an order of magnitude more parameters than GPT-1\n(1.5 billion versus 117 million). GPT-3 has two orders of magnitude more than\nGPT-2 (175 billion versus 1.5 billion). This means a three-orders-of-magnitude\nincrease in model sizes between 2018 and 2021.",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 2291,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 673
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q09",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Why are raw pre-trained language models not immediately suitable for interactive chatbot conversations?",
+      "expected_answer": "Pre-trained models are optimized for text completion rather than conversing.",
+      "gold_page": 104,
+      "evidence_quote": "As discussed in Chapter 1, the pre-trained model is likely optimized for completion rather than conversing.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p30_p001",
+          "page": 30,
+          "score": 0.56098217,
+          "text": "For example, if you ask a completion machine a question, it can complete what\nyou said by adding another question instead of answering the question. “PostTraining” on page 78 discusses how to make a model respond appropriately to a user’s\nrequest. Self-supervision\nLanguage modeling is just one of many ML algorithms. There are also models for\nobject detection, topic modeling, recommender systems, weather forecasting, stock\nprice prediction, etc. What’s special about language models that made them the center of the scaling approach that caused the ChatGPT moment? The answer is that language models can be trained using self-supervision, while many\nother models require supervision.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p30_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 30,
+            "text": "For example, if you ask a completion machine a question, it can complete what\nyou said by adding another question instead of answering the question. “PostTraining” on page 78 discusses how to make a model respond appropriately to a user’s\nrequest. Self-supervision\nLanguage modeling is just one of many ML algorithms. There are also models for\nobject detection, topic modeling, recommender systems, weather forecasting, stock\nprice prediction, etc. What’s special about language models that made them the center of the scaling approach that caused the ChatGPT moment? The answer is that language models can be trained using self-supervision, while many\nother models require supervision.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2509,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 686
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p102_p000",
+          "page": 102,
+          "score": 0.53491104,
+          "text": "21 A friend used this analogy: a pre-trained model talks like a web page, not a human. 22 RL fundamentals are beyond the scope of this book, but the highlight is that RL lets you optimize against\ndifficult objectives like human preference. Post-Training\nPost-training starts with a pre-trained model. Let’s say that you’ve pre-trained a\nfoundation model using self-supervision. Due to how pre-training works today, a\npre-trained model typically has two issues. First, self-supervision optimizes the model\nfor text completion, not conversations.21 If you find this unclear, don’t worry, “Supervised Finetuning” on page 80 will have examples. Second, if the model is pre-trained\non data indiscriminately scraped from the internet, its outputs can be racist, sexist,\nrude, or just wrong.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p102_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 102,
+            "text": "21 A friend used this analogy: a pre-trained model talks like a web page, not a human. 22 RL fundamentals are beyond the scope of this book, but the highlight is that RL lets you optimize against\ndifficult objectives like human preference. Post-Training\nPost-training starts with a pre-trained model. Let’s say that you’ve pre-trained a\nfoundation model using self-supervision. Due to how pre-training works today, a\npre-trained model typically has two issues. First, self-supervision optimizes the model\nfor text completion, not conversations.21 If you find this unclear, don’t worry, “Supervised Finetuning” on page 80 will have examples. Second, if the model is pre-trained\non data indiscriminately scraped from the internet, its outputs can be racist, sexist,\nrude, or just wrong.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2617,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 784
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p001",
+          "page": 107,
+          "score": 0.5271707,
+          "text": "They claimed that their heuristics reliably yield highquality dialogues. Specifically, they looked for texts that look like the following format:\n[A]: [Short paragraph]\n[B]: [Short paragraph]\n[A]: [Short paragraph]\n[B]: [Short paragraph]\n…\nTo reduce their dependence on high-quality human annotated data, many teams are\nturning to AI-generated data. Synthetic data is discussed in Chapter 8. Technically, you can train a model from scratch on the demonstration data instead of\nfinetuning a pre-trained model, effectively eliminating the self-supervised pretraining step. However, the pre-training approach often has returned superior results. Preference Finetuning\nWith great power comes great responsibilities.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 107,
+            "text": "They claimed that their heuristics reliably yield highquality dialogues. Specifically, they looked for texts that look like the following format:\n[A]: [Short paragraph]\n[B]: [Short paragraph]\n[A]: [Short paragraph]\n[B]: [Short paragraph]\n…\nTo reduce their dependence on high-quality human annotated data, many teams are\nturning to AI-generated data. Synthetic data is discussed in Chapter 8. Technically, you can train a model from scratch on the demonstration data instead of\nfinetuning a pre-trained model, effectively eliminating the self-supervised pretraining step. However, the pre-training approach often has returned superior results. Preference Finetuning\nWith great power comes great responsibilities.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2441,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 711
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q10",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "What empirical performance gains do RLHF and DPO provide over supervised fine-tuning alone?",
+      "expected_answer": "Empirically, both RLHF and DPO improve performance compared to SFT alone.",
+      "gold_page": 112,
+      "evidence_quote": "Empirically, RLHF and DPO both improve performance compared to SFT alone.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p112_p000",
+          "page": 112,
+          "score": 0.7201276,
+          "text": "Empirically, RLHF and DPO both improve performance compared to SFT alone. However, as of this writing, there are debates on why they work. As the field evolves,\nI suspect that preference finetuning will change significantly in the future. If you’re\ninterested in learning more about RLHF and preference finetuning, check out the\nbook’s GitHub repository. Both SFT and preference finetuning are steps taken to address the problem created\nby the low quality of data used for pre-training. If one day we have better pre-training\ndata or better ways to train foundation models, we might not need SFT and preference at all. Some companies find it okay to skip reinforcement learning altogether.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p112_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 112,
+            "text": "Empirically, RLHF and DPO both improve performance compared to SFT alone. However, as of this writing, there are debates on why they work. As the field evolves,\nI suspect that preference finetuning will change significantly in the future. If you’re\ninterested in learning more about RLHF and preference finetuning, check out the\nbook’s GitHub repository. Both SFT and preference finetuning are steps taken to address the problem created\nby the low quality of data used for pre-training. If one day we have better pre-training\ndata or better ways to train foundation models, we might not need SFT and preference at all. Some companies find it okay to skip reinforcement learning altogether.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2546,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 689
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p108_p001",
+          "page": 108,
+          "score": 0.62796694,
+          "text": "Had the goal been simple, the solution could’ve been elegant. However, given the\nambitious nature of the goal, the solution we have today is complicated. The earliest\nsuccessful preference finetuning algorithm, which is still popular today, is RLHF. RLHF consists of two parts:\n1. Train a reward model that scores the foundation model’s outputs. 2. Optimize the foundation model to generate responses for which the reward\nmodel will give maximal scores. While RLHF is still used today, newer approaches like DPO ( Rafailov et al., 2023) are\ngaining traction. For example, Meta switched from RLHF for Llama 2 to DPO for\nLlama 3 to reduce complexity. I won’t be able to cover all the different approaches in\nthis book.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p108_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 108,
+            "text": "Had the goal been simple, the solution could’ve been elegant. However, given the\nambitious nature of the goal, the solution we have today is complicated. The earliest\nsuccessful preference finetuning algorithm, which is still popular today, is RLHF. RLHF consists of two parts:\n1. Train a reward model that scores the foundation model’s outputs. 2. Optimize the foundation model to generate responses for which the reward\nmodel will give maximal scores. While RLHF is still used today, newer approaches like DPO ( Rafailov et al., 2023) are\ngaining traction. For example, Meta switched from RLHF for Llama 2 to DPO for\nLlama 3 to reduce complexity. I won’t be able to cover all the different approaches in\nthis book.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2482,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 716
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p108_p002",
+          "page": 108,
+          "score": 0.6074817,
+          "text": "I choose to feature RLHF instead of DPO here because RLHF, while more\ncomplex than DPO, provides more flexibility to tweak the model. Llama 2’s authors\nposited that “the superior writing abilities of LLMs, as manifested in surpassing\nhuman annotators in certain tasks, are fundamentally driven by RLHF” ( Touvron et\nal., 2023). Reward model\nRLHF relies on a reward model. Given a pair of (prompt, response), the reward\nmodel outputs a score for how good the response is. Training a model to score a given\ninput is a common ML task. The challenge, similar to that of SFT, is to obtain reliable\ndata. If we ask labelers to score each response directly, the scores will vary. For the\nsame sample, on a 10-point scale, one labeler might give a 5 and another 7.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p108_p002",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 108,
+            "text": "I choose to feature RLHF instead of DPO here because RLHF, while more\ncomplex than DPO, provides more flexibility to tweak the model. Llama 2’s authors\nposited that “the superior writing abilities of LLMs, as manifested in surpassing\nhuman annotators in certain tasks, are fundamentally driven by RLHF” ( Touvron et\nal., 2023). Reward model\nRLHF relies on a reward model. Given a pair of (prompt, response), the reward\nmodel outputs a score for how good the response is. Training a model to score a given\ninput is a common ML task. The challenge, similar to that of SFT, is to obtain reliable\ndata. If we ask labelers to score each response directly, the scores will vary. For the\nsame sample, on a 10-point scale, one labeler might give a 5 and another 7.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2482,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 2,
+            "char_length": 756
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q11",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "Under Chapter 2 sampling strategies, what drawback can occur if sampling tokens strictly by probability distribution?",
+      "expected_answer": "The model can be less creative.",
+      "gold_page": 114,
+      "evidence_quote": "One problem with sampling the next token according to the probability distribution is that the model can be less creative.",
+      "filter": {
+        "chapter": 2,
+        "section": "sampling_strategies"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p114_p001",
+          "page": 114,
+          "score": 0.5332252,
+          "text": "For example, one sampling strategy can make the model generate\nmore creative responses, whereas another strategy can make its generations more\npredictable. Many different sample strategies have been introduced to nudge models\ntoward responses with specific attributes. You can also design your own sampling\nstrategy, though this typically requires access to the model’s logits. Let’s go over a few\ncommon sampling strategies to see how they work. Temperature\nOne problem with sampling the next token according to the probability distribution\nis that the model can be less creative. In the previous example, common colors like\n“red”, “green”, “purple”, and so on have the highest probabilities. The language\nmodel’s answer ends up sounding like that of a five-year-old: “My favorite color is\ngreen”.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p114_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 114,
+            "text": "For example, one sampling strategy can make the model generate\nmore creative responses, whereas another strategy can make its generations more\npredictable. Many different sample strategies have been introduced to nudge models\ntoward responses with specific attributes. You can also design your own sampling\nstrategy, though this typically requires access to the model’s logits. Let’s go over a few\ncommon sampling strategies to see how they work. Temperature\nOne problem with sampling the next token according to the probability distribution\nis that the model can be less creative. In the previous example, common colors like\n“red”, “green”, “purple”, and so on have the highest probabilities. The language\nmodel’s answer ends up sounding like that of a five-year-old: “My favorite color is\ngreen”.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 1706,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 798
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p113_p000",
+          "page": 113,
+          "score": 0.5256253,
+          "text": "For a language model, to generate the next token, the model first computes the probability distribution over all tokens in the vocabulary, which looks like Figure 2-14. Figure 2-14. To generate the next token, the language model first computes the probability distribution over all tokens in the vocabulary. When working with possible outcomes of different probabilities, a common strategy\nis to pick the outcome with the highest probability. Always picking the most likely\noutcome = is called greedy sampling . This often works for classification tasks. For\nexample, if the model thinks that an email is more likely to be spam than not spam, it\nmakes sense to mark it as spam. However, for a language model, greedy sampling\ncreates boring outputs.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p113_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 113,
+            "text": "For a language model, to generate the next token, the model first computes the probability distribution over all tokens in the vocabulary, which looks like Figure 2-14. Figure 2-14. To generate the next token, the language model first computes the probability distribution over all tokens in the vocabulary. When working with possible outcomes of different probabilities, a common strategy\nis to pick the outcome with the highest probability. Always picking the most likely\noutcome = is called greedy sampling . This often works for classification tasks. For\nexample, if the model thinks that an email is more likely to be spam than not spam, it\nmakes sense to mark it as spam. However, for a language model, greedy sampling\ncreates boring outputs.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 1596,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 748
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+          "page": 119,
+          "score": 0.5231149,
+          "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 119,
+            "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 1637,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 751
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q12",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Does top-p sampling necessarily reduce the softmax computation load compared to top-k?",
+      "expected_answer": "Unlike top-k, top-p does not necessarily reduce the softmax computation load.",
+      "gold_page": 119,
+      "evidence_quote": "Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+          "page": 118,
+          "score": 0.77438515,
+          "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "Top-k\nTop-k is a sampling strategy to reduce the computation workload without sacrificing\ntoo much of the model’s response diversity. Recall that a softmax layer is used to\ncompute the probability distribution over all possible values. Softmax requires two\npasses over all possible values: one to perform the exponential sum ∑ j e\nxj , and one to\nperform \ne\nxi\n∑ j e\nxj for each value. For a language model with a large vocabulary, this process is computationally expensive. To avoid this problem, after the model has computed the logits, we pick the top-k\nlogits and perform softmax over these top-k logits only. Depending on how diverse\nyou want your application to be, k can be anywhere from 50 to 500—much smaller\nthan a model’s vocabulary size. The model then samples from these top values.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 795
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+          "page": 119,
+          "score": 0.63993806,
+          "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p119_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 119,
+            "text": "28 Paid model APIs often charge per number of output tokens. Figure 2-18. Example token probabilities. Unlike top-k, top-p doesn’t necessarily reduce the softmax computation load. Its benefit is that because it focuses only on the set of most relevant values for each context,\nit allows outputs to be more contextually appropriate. In theory, there don’t seem to\nbe a lot of benefits to top-p sampling. However, in practice, top-p sampling has proven to work well, causing its popularity to rise. A related sampling strategy is min-p, where you set the minimum probability that a\ntoken must reach to be considered during sampling. Stopping condition\nAn autoregressive language model generates sequences of tokens by generating one\ntoken after another.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 1637,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 751
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+          "page": 118,
+          "score": 0.61134875,
+          "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p118_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 118,
+            "text": "A\nsmaller k value makes the text more predictable but less interesting, as the model is\nlimited to a smaller set of likely words. Top-p\nIn top-k sampling, the number of values considered is fixed to k. However, this number should change depending on the situation. For example, given the prompt “Do\nyou like music? Answer with only yes or no.” the number of values considered should\nbe two: yes and no. Given the prompt “What’s the meaning of life?” the number of\nvalues considered should be much larger. Top-p, also known as nucleus sampling, allows for a more dynamic selection of values\nto be sampled from. In top-p sampling, the model sums the probabilities of the most\nlikely next values in descending order and stops when the sum reaches p.",
+            "chapter": 2,
+            "section": "sampling_strategies",
+            "char_count": 2139,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 746
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q13",
+      "split": "dev",
+      "type": "dien_dat_lai",
+      "question": "What does a suffix like 13B signify when appended to a model name like Llama-13B?",
+      "expected_answer": "It denotes the number of parameters, such as 13 billion parameters.",
+      "gold_page": 91,
+      "evidence_quote": "The number of parameters is usually appended at the end of a model name. For example, Llama-13B refers to the version of Llama, a model family developed by Meta, with 13 billion parameters.",
+      "filter": null,
+      "hit_at_1": false,
+      "hit_at_3": false,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p88_p000",
+          "page": 88,
+          "score": 0.4942062,
+          "text": "Figure 2-6. A visualization of the weight composition of a transformer model. Larger dimension values result in larger model sizes. Table 2-4 shows these dimension values for different Llama 2 ( Touvron et al., 2023 ) and Llama 3 ( Dubey et al.,\n2024) models. Note that while the increased context length impacts the model’s\nmemory footprint, it doesn’t impact the model’s total number of parameters. Table 2-4. The dimension values of different Llama models.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p88_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 88,
+            "text": "Figure 2-6. A visualization of the weight composition of a transformer model. Larger dimension values result in larger model sizes. Table 2-4 shows these dimension values for different Llama 2 ( Touvron et al., 2023 ) and Llama 3 ( Dubey et al.,\n2024) models. Note that while the increased context length impacts the model’s\nmemory footprint, it doesn’t impact the model’s total number of parameters. Table 2-4. The dimension values of different Llama models.",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 806,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 459
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p88_p001",
+          "page": 88,
+          "score": 0.45575768,
+          "text": "Model # transformer blocks Model dim Feedforward dim Vocab size Context length\nLlama 2-7B 32 4,096 11,008 32K 4K\nLlama 2-13B 40 5,120 13,824 32K 4K\nLlama 2-70B 80 8,192 22,016 32K 4K\nLlama 3-7B 32 4,096 14,336 128K 128K\nLlama 3-70B 80 8,192 28,672 128K 128K\nLlama 3-405B 126 16,384 53,248 128K 128K\n64 | Chapter 2: Understanding Foundation Models",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p88_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 88,
+            "text": "Model # transformer blocks Model dim Feedforward dim Vocab size Context length\nLlama 2-7B 32 4,096 11,008 32K 4K\nLlama 2-13B 40 5,120 13,824 32K 4K\nLlama 2-70B 80 8,192 22,016 32K 4K\nLlama 3-7B 32 4,096 14,336 128K 128K\nLlama 3-70B 80 8,192 28,672 128K 128K\nLlama 3-405B 126 16,384 53,248 128K 128K\n64 | Chapter 2: Understanding Foundation Models",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 806,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 346
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p92_p000",
+          "page": 92,
+          "score": 0.4340627,
+          "text": "13 The actual memory needed is higher. Chapter 7 discusses how to calculate a model’s memory usage. As the community better understands how to train large models,\nnewer-generation models tend to outperform older-generation\nmodels of the same size. For example, Llama 3-8B (2024) outperforms even Llama 2-70B (2023) on the MMLU benchmark. The number of parameters helps us estimate the compute resources needed to train\nand run this model. For example, if a model has 7 billion parameters, and each\nparameter is stored using 2 bytes (16 bits), then we can calculate that the GPU memory needed to do inference using this model will be at least 14 billion bytes (14 GB).13\nThe number of parameters can be misleading if the model is sparse. A sparse model\nhas a large percentage of zero-value parameters.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p92_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 92,
+            "text": "13 The actual memory needed is higher. Chapter 7 discusses how to calculate a model’s memory usage. As the community better understands how to train large models,\nnewer-generation models tend to outperform older-generation\nmodels of the same size. For example, Llama 3-8B (2024) outperforms even Llama 2-70B (2023) on the MMLU benchmark. The number of parameters helps us estimate the compute resources needed to train\nand run this model. For example, if a model has 7 billion parameters, and each\nparameter is stored using 2 bytes (16 bits), then we can calculate that the GPU memory needed to do inference using this model will be at least 14 billion bytes (14 GB).13\nThe number of parameters can be misleading if the model is sparse. A sparse model\nhas a large percentage of zero-value parameters.",
+            "chapter": 2,
+            "section": "model_architecture",
+            "char_count": 2511,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 800
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q14",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "In Chapter 1 use cases, how fast did GitHub Copilot reach $100 million in annual recurring revenue?",
+      "expected_answer": "Only two years after its launch.",
+      "gold_page": 44,
+      "evidence_quote": "GitHub Copilot, whose annual recurring revenue crossed $100 million only two years after its launch.",
+      "filter": {
+        "chapter": 1,
+        "section": "foundation_model_use_cases"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p44_p001",
+          "page": 44,
+          "score": 0.6326334,
+          "text": "One of the earliest successes of foundation models in production is the code completion tool GitHub Copilot, whose annual recurring revenue crossed $100 million only\ntwo years after its launch. As of this writing, AI-powered coding startups have raised\nhundreds of millions of dollars, with Magic raising $320 million and Anysphere raising $60 million, both in August 2024. Open source coding tools like gpt-engineer and\nscreenshot-to-code both got 50,000 stars on GitHub within a year, and many more\nare being rapidly introduced. Other than tools that help with general coding, many tools specialize in certain coding tasks.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p44_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 44,
+            "text": "One of the earliest successes of foundation models in production is the code completion tool GitHub Copilot, whose annual recurring revenue crossed $100 million only\ntwo years after its launch. As of this writing, AI-powered coding startups have raised\nhundreds of millions of dollars, with Magic raising $320 million and Anysphere raising $60 million, both in August 2024. Open source coding tools like gpt-engineer and\nscreenshot-to-code both got 50,000 stars on GitHub within a year, and many more\nare being rapidly introduced. Other than tools that help with general coding, many tools specialize in certain coding tasks.",
+            "chapter": 1,
+            "section": "foundation_model_use_cases",
+            "char_count": 1834,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 625
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p43_p000",
+          "page": 43,
+          "score": 0.41762447,
+          "text": "Figure 1-7. Distribution of use cases in the 205 open source repositories on GitHub. The enterprise world generally prefers applications with lower risks. For example, a\n2024 a16z Growth report showed that companies are faster to deploy internal-facing\napplications (internal knowledge management) than external-facing applications\n(customer support chatbots), as shown in Figure 1-8. Internal applications help companies develop their AI engineering expertise while minimizing the risks associated\nwith data privacy, compliance, and potential catastrophic failures. Similarly, while\nfoundation models are open-ended and can be used for any task, many applications\nbuilt on top of them are still close-ended, such as classification.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p43_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 43,
+            "text": "Figure 1-7. Distribution of use cases in the 205 open source repositories on GitHub. The enterprise world generally prefers applications with lower risks. For example, a\n2024 a16z Growth report showed that companies are faster to deploy internal-facing\napplications (internal knowledge management) than external-facing applications\n(customer support chatbots), as shown in Figure 1-8. Internal applications help companies develop their AI engineering expertise while minimizing the risks associated\nwith data privacy, compliance, and potential catastrophic failures. Similarly, while\nfoundation models are open-ended and can be used for any task, many applications\nbuilt on top of them are still close-ended, such as classification.",
+            "chapter": 1,
+            "section": "foundation_model_use_cases",
+            "char_count": 931,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 732
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p57_p003",
+          "page": 57,
+          "score": 0.40234262,
+          "text": "However, a good initial demo doesn’t promise a good end product. It might\ntake a weekend to build a demo but months, and even years, to build a product. In the paper UltraChat, Ding et al. (2023) shared that “the journey from 0 to 60 is\neasy, whereas progressing from 60 to 100 becomes exceedingly challenging.”\nLinkedIn (2024) shared the same sentiment. It took them one month to achieve 80%\nof the experience they wanted. This initial success made them grossly underestimate\nhow much time it’d take them to improve the product. They found it took them four\nPlanning AI Applications | 33",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p57_p003",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 57,
+            "text": "However, a good initial demo doesn’t promise a good end product. It might\ntake a weekend to build a demo but months, and even years, to build a product. In the paper UltraChat, Ding et al. (2023) shared that “the journey from 0 to 60 is\neasy, whereas progressing from 60 to 100 becomes exceedingly challenging.”\nLinkedIn (2024) shared the same sentiment. It took them one month to achieve 80%\nof the experience they wanted. This initial success made them grossly underestimate\nhow much time it’d take them to improve the product. They found it took them four\nPlanning AI Applications | 33",
+            "chapter": 1,
+            "section": "planning_ai_applications",
+            "char_count": 2724,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 3,
+            "char_length": 588
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q15",
+      "split": "dev",
+      "type": "dieu_kien_ngoai_le",
+      "question": "Can masked language models like BERT be employed for generating text?",
+      "expected_answer": "Technically yes if you try really hard, but autoregressive models are much more popular.",
+      "gold_page": 29,
+      "evidence_quote": "Technically, a masked language model like BERT can also be used for text generations if you try really hard.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p29_p000",
+          "page": 29,
+          "score": 0.7500769,
+          "text": "4 Technically, a masked language model like BERT can also be used for text generations if you try really hard. choice for text generation, and for this reason, they are much more popular than\nmasked language models.4\nFigure 1-2 shows these two types of language models. Figure 1-2. Autoregressive language model and masked language model. In this book, unless explicitly stated, language model will refer to an\nautoregressive model. The outputs of language models are open-ended. A language model can use its fixed,\nfinite vocabulary to construct infinite possible outputs. A model that can generate\nopen-ended outputs is called generative, hence the term generative AI. You can think of a language model as a completion machine: given a text (prompt), it\ntries to complete that text.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p29_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 29,
+            "text": "4 Technically, a masked language model like BERT can also be used for text generations if you try really hard. choice for text generation, and for this reason, they are much more popular than\nmasked language models.4\nFigure 1-2 shows these two types of language models. Figure 1-2. Autoregressive language model and masked language model. In this book, unless explicitly stated, language model will refer to an\nautoregressive model. The outputs of language models are open-ended. A language model can use its fixed,\nfinite vocabulary to construct infinite possible outputs. A model that can generate\nopen-ended outputs is called generative, hence the term generative AI. You can think of a language model as a completion machine: given a text (prompt), it\ntries to complete that text.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 1185,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 784
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p001",
+          "page": 28,
+          "score": 0.61225384,
+          "text": "Tokens balance having fewer units than words while\nretaining more meaning than individual characters. There are two main types of language models: masked language models and autoregressive language models. They differ based on what information they can use to predict a token:\nMasked language model\nA masked language model is trained to predict missing tokens anywhere in a\nsequence, using the context from both before and after the missing tokens . In\nessence, a masked language model is trained to be able to fill in the blank. For\nexample, given the context, “My favorite __ is blue”, a masked language model\nshould predict that the blank is likely “color”. A well-known example of a\nmasked language model is bidirectional encoder representations from transformers, or BERT (Devlin et al., 2018).",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 28,
+            "text": "Tokens balance having fewer units than words while\nretaining more meaning than individual characters. There are two main types of language models: masked language models and autoregressive language models. They differ based on what information they can use to predict a token:\nMasked language model\nA masked language model is trained to predict missing tokens anywhere in a\nsequence, using the context from both before and after the missing tokens . In\nessence, a masked language model is trained to be able to fill in the blank. For\nexample, given the context, “My favorite __ is blue”, a masked language model\nshould predict that the blank is likely “color”. A well-known example of a\nmasked language model is bidirectional encoder representations from transformers, or BERT (Devlin et al., 2018).",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2307,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 799
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p002",
+          "page": 28,
+          "score": 0.5544047,
+          "text": "As of writing, masked language models are commonly used for non-generative\ntasks such as sentiment analysis and text classification. They are also useful for\ntasks requiring an understanding of the overall context, such as code debugging,\nwhere a model needs to understand both the preceding and following code to\nidentify errors. Autoregressive language model\nAn autoregressive language model is trained to predict the next token in a\nsequence, using only the preceding tokens . It predicts what comes next in “My\nfavorite color is __ .”3 An autoregressive model can continually generate one\ntoken after another. Today, autoregressive language models are the models of\n4 | Chapter 1: Introduction to Building AI Applications with Foundation Models",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p28_p002",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 28,
+            "text": "As of writing, masked language models are commonly used for non-generative\ntasks such as sentiment analysis and text classification. They are also useful for\ntasks requiring an understanding of the overall context, such as code debugging,\nwhere a model needs to understand both the preceding and following code to\nidentify errors. Autoregressive language model\nAn autoregressive language model is trained to predict the next token in a\nsequence, using only the preceding tokens . It predicts what comes next in “My\nfavorite color is __ .”3 An autoregressive model can continually generate one\ntoken after another. Today, autoregressive language models are the models of\n4 | Chapter 1: Introduction to Building AI Applications with Foundation Models",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2307,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 2,
+            "char_length": 748
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q16",
+      "split": "test",
+      "type": "truc_tiep",
+      "question": "What supervision method did OpenAI utilize to train the CLIP language-image model without manual labeling?",
+      "expected_answer": "OpenAI used natural language supervision, a variant of self-supervision.",
+      "gold_page": 34,
+      "evidence_quote": "natural language supervision to train their language-image model CLIP (OpenAI, 2021)",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p34_p000",
+          "page": 34,
+          "score": 0.61061585,
+          "text": "Just like language models, multimodal models need data to scale up. Self-supervision\nworks for multimodal models too. For example, OpenAI used a variant of selfsupervision called natural language supervision to train their language-image model\nCLIP (OpenAI, 2021) . Instead of manually generating labels for each image, they\nfound (image, text) pairs that co-occurred on the internet. They were able to generate\na dataset of 400 million (image, text) pairs, which was 400 times larger than ImageNet, without manual labeling cost. This dataset enabled CLIP to become the first\nmodel that could generalize to multiple image classification tasks without requiring\nadditional training. This book uses the term foundation models to refer to both large\nlanguage models and large multimodal models.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p34_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 34,
+            "text": "Just like language models, multimodal models need data to scale up. Self-supervision\nworks for multimodal models too. For example, OpenAI used a variant of selfsupervision called natural language supervision to train their language-image model\nCLIP (OpenAI, 2021) . Instead of manually generating labels for each image, they\nfound (image, text) pairs that co-occurred on the internet. They were able to generate\na dataset of 400 million (image, text) pairs, which was 400 times larger than ImageNet, without manual labeling cost. This dataset enabled CLIP to become the first\nmodel that could generalize to multiple image classification tasks without requiring\nadditional training. This book uses the term foundation models to refer to both large\nlanguage models and large multimodal models.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2550,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 791
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p000",
+          "page": 107,
+          "score": 0.5499467,
+          "text": "Not everyone can afford to follow the high-quality human annotation approach. LAION, a non-profit organization, mobilized 13,500 volunteers worldwide to generate 10,000 conversations, which consist of 161,443 messages in 35 different languages, annotated with 461,292 quality ratings. Since the data was generated by\nvolunteers, there wasn’t much control for biases. In theory, the labelers that teach\nmodels the human preference should be representative of the human population. The\ndemographic of labelers for LAION is skewed. For example, in a self-reported survey,\n90% of volunteer labelers identified as male (Köpf et al., 2023). DeepMind used simple heuristics to filter for conversations from internet data to\ntrain their model Gopher.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 107,
+            "text": "Not everyone can afford to follow the high-quality human annotation approach. LAION, a non-profit organization, mobilized 13,500 volunteers worldwide to generate 10,000 conversations, which consist of 161,443 messages in 35 different languages, annotated with 461,292 quality ratings. Since the data was generated by\nvolunteers, there wasn’t much control for biases. In theory, the labelers that teach\nmodels the human preference should be representative of the human population. The\ndemographic of labelers for LAION is skewed. For example, in a self-reported survey,\n90% of volunteer labelers identified as male (Köpf et al., 2023). DeepMind used simple heuristics to filter for conversations from internet data to\ntrain their model Gopher.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2441,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 742
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p30_p001",
+          "page": 30,
+          "score": 0.54504883,
+          "text": "For example, if you ask a completion machine a question, it can complete what\nyou said by adding another question instead of answering the question. “PostTraining” on page 78 discusses how to make a model respond appropriately to a user’s\nrequest. Self-supervision\nLanguage modeling is just one of many ML algorithms. There are also models for\nobject detection, topic modeling, recommender systems, weather forecasting, stock\nprice prediction, etc. What’s special about language models that made them the center of the scaling approach that caused the ChatGPT moment? The answer is that language models can be trained using self-supervision, while many\nother models require supervision.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p30_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 30,
+            "text": "For example, if you ask a completion machine a question, it can complete what\nyou said by adding another question instead of answering the question. “PostTraining” on page 78 discusses how to make a model respond appropriately to a user’s\nrequest. Self-supervision\nLanguage modeling is just one of many ML algorithms. There are also models for\nobject detection, topic modeling, recommender systems, weather forecasting, stock\nprice prediction, etc. What’s special about language models that made them the center of the scaling approach that caused the ChatGPT moment? The answer is that language models can be trained using self-supervision, while many\nother models require supervision.",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2509,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 686
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q17",
+      "split": "test",
+      "type": "dien_dat_lai",
+      "question": "Which generative AI application is consistently reported as the most popular in industry surveys?",
+      "expected_answer": "Coding is hands down the most popular use case.",
+      "gold_page": 44,
+      "evidence_quote": "In multiple generative AI surveys, coding is hands down the most popular use case.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p44_p000",
+          "page": 44,
+          "score": 0.6562478,
+          "text": "Even after seeing hundreds of AI applications, I still find new applications that surprise me every week. In the early days of the internet, few people foresaw that the\ndominating use case on the internet one day would be social media. As we learn to\nmake the most out of AI, the use case that will eventually dominate might surprise us. With luck, the surprise will be a good one. Coding\nIn multiple generative AI surveys, coding is hands down the most popular use case. AI coding tools are popular both because AI is good at coding and because early AI\nengineers are coders who are more exposed to coding challenges.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p44_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 44,
+            "text": "Even after seeing hundreds of AI applications, I still find new applications that surprise me every week. In the early days of the internet, few people foresaw that the\ndominating use case on the internet one day would be social media. As we learn to\nmake the most out of AI, the use case that will eventually dominate might surprise us. With luck, the surprise will be a good one. Coding\nIn multiple generative AI surveys, coding is hands down the most popular use case. AI coding tools are popular both because AI is good at coding and because early AI\nengineers are coders who are more exposed to coding challenges.",
+            "chapter": 1,
+            "section": "foundation_model_use_cases",
+            "char_count": 1834,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 618
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p38_p003",
+          "page": 38,
+          "score": 0.6116127,
+          "text": "A LinkedIn survey from August 2023 shows that the number of professionals adding\nterms like “Generative AI,” “ChatGPT,” “Prompt Engineering,” and “Prompt Crafting” to their profile increased on average 75% each month . ComputerWorld declared\nthat “teaching AI to behave is the fastest-growing career skill”. 14 | Chapter 1: Introduction to Building AI Applications with Foundation Models",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p38_p003",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 38,
+            "text": "A LinkedIn survey from August 2023 shows that the number of professionals adding\nterms like “Generative AI,” “ChatGPT,” “Prompt Engineering,” and “Prompt Crafting” to their profile increased on average 75% each month . ComputerWorld declared\nthat “teaching AI to behave is the fastest-growing career skill”. 14 | Chapter 1: Introduction to Building AI Applications with Foundation Models",
+            "chapter": 1,
+            "section": "the_rise_of_ai_engineering",
+            "char_count": 2558,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 3,
+            "char_length": 387
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p46_p001",
+          "page": 46,
+          "score": 0.5904443,
+          "text": "Some of the most successful AI startups are creative applications, such as Midjourney for image generation, Adobe Firefly for photo editing, and Runway, Pika Labs, and Sora for video\ngeneration. In late 2023, at one and a half years old, Midjourney had already generated $200 million in annual recurring revenue. As of December 2023, among the top\n10 free apps for Graphics & Design on the Apple App Store, half have AI in their\nnames. I suspect that soon, graphics and design apps will incorporate AI by default,\nand they’ll no longer need the word “AI” in their names. Chapter 2 discusses the\nprobabilistic nature of AI in more detail. It’s now common to use AI to generate profile pictures for social media, from\nLinkedIn to TikTok.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p46_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 46,
+            "text": "Some of the most successful AI startups are creative applications, such as Midjourney for image generation, Adobe Firefly for photo editing, and Runway, Pika Labs, and Sora for video\ngeneration. In late 2023, at one and a half years old, Midjourney had already generated $200 million in annual recurring revenue. As of December 2023, among the top\n10 free apps for Graphics & Design on the Apple App Store, half have AI in their\nnames. I suspect that soon, graphics and design apps will incorporate AI by default,\nand they’ll no longer need the word “AI” in their names. Chapter 2 discusses the\nprobabilistic nature of AI in more detail. It’s now common to use AI to generate profile pictures for social media, from\nLinkedIn to TikTok.",
+            "chapter": 1,
+            "section": "foundation_model_use_cases",
+            "char_count": 2727,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 735
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "In Chapter 2 on training data, what percentage of the Common Crawl corpus is in English?",
+      "expected_answer": "English represents 45.8786% of Common Crawl.",
+      "gold_page": 76,
+      "evidence_quote": "English en 1,452 45.8786",
+      "filter": {
+        "chapter": 2,
+        "section": "training_data"
+      },
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p75_p003",
+          "page": 75,
+          "score": 0.69145525,
+          "text": "An analysis of the Common Crawl dataset shows that\nEnglish accounts for almost half of the data (45.88%), making it eight times more\nprevalent than the second-most common language, Russian (5.97%) (Lai et al., 2023). See Table 2-1 for a list of languages with at least 1% in Common Crawl. Languages\nwith limited availability as training data—typically languages not included in this list\n—are considered low-resource. Training Data | 51",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p75_p003",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 75,
+            "text": "An analysis of the Common Crawl dataset shows that\nEnglish accounts for almost half of the data (45.88%), making it eight times more\nprevalent than the second-most common language, Russian (5.97%) (Lai et al., 2023). See Table 2-1 for a list of languages with at least 1% in Common Crawl. Languages\nwith limited availability as training data—typically languages not included in this list\n—are considered low-resource. Training Data | 51",
+            "chapter": 2,
+            "section": "training_data",
+            "char_count": 2520,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 3,
+            "char_length": 436
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p76_p000",
+          "page": 76,
+          "score": 0.6403487,
+          "text": "Table 2-1. The most common languages in Common Crawl, a popular dataset for training\nLLMs. Source: Lai et al. (2023). Language Code Pop. CC size\n (M) (%) Cat. English en 1,452 45.8786 H\nRussian ru 258 5.9692 H\nGerman de 134 5.8811 H\nChinese zh 1,118 4.8747 H\nJapanese jp 125 4.7884 H\nFrench fr 274 4.7254 H\nSpanish es 548 4.4690 H\nItalian it 68 2.5712 H\nDutch nl 30 2.0585 H\nPolish pl 45 1.6636 H\nPortuguese pt 257 1.1505 H\nVietnamese vi 85 1.0299 H\nMany other languages, despite having a lot of speakers today, are severely underrepresented in Common Crawl. Table 2-2 shows some of these languages. Ideally, the\nratio between world population representation and Common Crawl representation\nshould be 1. The higher this ratio, the more under-represented this language is in\nCommon Crawl. Table 2-2.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p76_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 76,
+            "text": "Table 2-1. The most common languages in Common Crawl, a popular dataset for training\nLLMs. Source: Lai et al. (2023). Language Code Pop. CC size\n (M) (%) Cat. English en 1,452 45.8786 H\nRussian ru 258 5.9692 H\nGerman de 134 5.8811 H\nChinese zh 1,118 4.8747 H\nJapanese jp 125 4.7884 H\nFrench fr 274 4.7254 H\nSpanish es 548 4.4690 H\nItalian it 68 2.5712 H\nDutch nl 30 2.0585 H\nPolish pl 45 1.6636 H\nPortuguese pt 257 1.1505 H\nVietnamese vi 85 1.0299 H\nMany other languages, despite having a lot of speakers today, are severely underrepresented in Common Crawl. Table 2-2 shows some of these languages. Ideally, the\nratio between world population representation and Common Crawl representation\nshould be 1. The higher this ratio, the more under-represented this language is in\nCommon Crawl. Table 2-2.",
+            "chapter": 2,
+            "section": "training_data",
+            "char_count": 1457,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 798
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p76_p001",
+          "page": 76,
+          "score": 0.60724914,
+          "text": "Examples of under-represented languages in Common Crawl. The last row,\nEnglish, is for comparison. The numbers for % in Common Crawl are taken from Lai et al. (2023). Language Speakers (million) % world populationa % in Common Crawl World: Common Crawl Ratio\nPunjabi 113 1.41% 0.0061% 231.56\nSwahili 71 0.89% 0.0077% 115.26\nUrdu 231 2.89% 0.0274% 105.38\nKannada 64 0.80% 0.0122% 65.57\nTelugu 95 1.19% 0.0183% 64.89\nGujarati 62 0.78% 0.0126% 61.51\nMarathi 99 1.24% 0.0213% 58.10\nBengali 272 3.40% 0.0930% 36.56\nEnglish 1452 18.15% 45.88% 0.40\na A world population of eight billion was used for this calculation. 52 | Chapter 2: Understanding Foundation Models",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p76_p001",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 76,
+            "text": "Examples of under-represented languages in Common Crawl. The last row,\nEnglish, is for comparison. The numbers for % in Common Crawl are taken from Lai et al. (2023). Language Speakers (million) % world populationa % in Common Crawl World: Common Crawl Ratio\nPunjabi 113 1.41% 0.0061% 231.56\nSwahili 71 0.89% 0.0077% 115.26\nUrdu 231 2.89% 0.0274% 105.38\nKannada 64 0.80% 0.0122% 65.57\nTelugu 95 1.19% 0.0183% 64.89\nGujarati 62 0.78% 0.0126% 61.51\nMarathi 99 1.24% 0.0213% 58.10\nBengali 272 3.40% 0.0930% 36.56\nEnglish 1452 18.15% 45.88% 0.40\na A world population of eight billion was used for this calculation. 52 | Chapter 2: Understanding Foundation Models",
+            "chapter": 2,
+            "section": "training_data",
+            "char_count": 1457,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 1,
+            "char_length": 658
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q19",
+      "split": "test",
+      "type": "dieu_kien_ngoai_le",
+      "question": "What level of generation does test time compute target compared to individual token sampling?",
+      "expected_answer": "Test time compute discusses sampling the whole output rather than just the next token.",
+      "gold_page": 120,
+      "evidence_quote": "The last section discussed how a model might sample the next token. This section discusses how a model might sample the whole output.",
+      "filter": null,
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p120_p000",
+          "page": 120,
+          "score": 0.5538256,
+          "text": "29 There are things you can do to reduce the cost of generating multiple outputs for the same input. For example, the input might only be processed once and reused for all outputs. Test Time Compute\nThe last section discussed how a model might sample the next token. This section\ndiscusses how a model might sample the whole output. One simple way to improve a model’s response quality is test time compute: instead of\ngenerating only one response per query, you generate multiple responses to increase\nthe chance of good responses. One way to do test time compute is the best of N technique discussed earlier in this chapter—you randomly generate multiple outputs and\npick one that works best. However, you can also be more strategic about how to generate multiple outputs.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p120_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 120,
+            "text": "29 There are things you can do to reduce the cost of generating multiple outputs for the same input. For example, the input might only be processed once and reused for all outputs. Test Time Compute\nThe last section discussed how a model might sample the next token. This section\ndiscusses how a model might sample the whole output. One simple way to improve a model’s response quality is test time compute: instead of\ngenerating only one response per query, you generate multiple responses to increase\nthe chance of good responses. One way to do test time compute is the best of N technique discussed earlier in this chapter—you randomly generate multiple outputs and\npick one that works best. However, you can also be more strategic about how to generate multiple outputs.",
+            "chapter": 2,
+            "section": "test_time_compute",
+            "char_count": 2559,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 774
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p120_p002",
+          "page": 120,
+          "score": 0.5272757,
+          "text": "On average, generating two outputs costs\napproximately twice as much as generating one.29\nI use the term test time compute to be consistent with the existing\nliterature, even though several early reviewers protested that this\nterm is confusing. In AI research, test time is typically used to refer\nto inference because researchers mostly only do inference to test a\nmodel. However, this technique can be applied to models in production in general. It’s test time compute because the number of\noutputs you can sample is determined by how much compute you\ncan allocate to each inference call. To pick the best output, you can either show users multiple outputs and let them\nchoose the one that works best for them, or you can devise a method to select the best\none.",
+          "page_match": true,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p120_p002",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 120,
+            "text": "On average, generating two outputs costs\napproximately twice as much as generating one.29\nI use the term test time compute to be consistent with the existing\nliterature, even though several early reviewers protested that this\nterm is confusing. In AI research, test time is typically used to refer\nto inference because researchers mostly only do inference to test a\nmodel. However, this technique can be applied to models in production in general. It’s test time compute because the number of\noutputs you can sample is determined by how much compute you\ncan allocate to each inference call. To pick the best output, you can either show users multiple outputs and let them\nchoose the one that works best for them, or you can devise a method to select the best\none.",
+            "chapter": 2,
+            "section": "test_time_compute",
+            "char_count": 2559,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 2,
+            "char_length": 763
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p121_p003",
+          "page": 121,
+          "score": 0.48930812,
+          "text": "DeepMind further proves the value of test time compute, arguing that scaling test\ntime compute (e.g., allocating more compute to generate more outputs during inference) can be more efficient than scaling model parameters ( Snell et al., 2024 ). The\nsame paper asks an interesting question: If an LLM is allowed to use a fixed but nontrivial amount of inference-time compute, how much can it improve its performance\non a challenging prompt? Sampling | 97",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p121_p003",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 121,
+            "text": "DeepMind further proves the value of test time compute, arguing that scaling test\ntime compute (e.g., allocating more compute to generate more outputs during inference) can be more efficient than scaling model parameters ( Snell et al., 2024 ). The\nsame paper asks an interesting question: If an LLM is allowed to use a fixed but nontrivial amount of inference-time compute, how much can it improve its performance\non a challenging prompt? Sampling | 97",
+            "chapter": 2,
+            "section": "test_time_compute",
+            "char_count": 2532,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 3,
+            "char_length": 453
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "q20",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "In Chapter 2 under post-training, how many volunteers did LAION mobilize to create conversational data?",
+      "expected_answer": "LAION mobilized 13,500 volunteers worldwide to generate 10,000 conversations.",
+      "gold_page": 107,
+      "evidence_quote": "LAION, a non-profit organization, mobilized 13,500 volunteers worldwide to generate 10,000 conversations",
+      "filter": {
+        "chapter": 2,
+        "section": "post_training"
+      },
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "hits": [
+        {
+          "rank": 1,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p000",
+          "page": 107,
+          "score": 0.6130215,
+          "text": "Not everyone can afford to follow the high-quality human annotation approach. LAION, a non-profit organization, mobilized 13,500 volunteers worldwide to generate 10,000 conversations, which consist of 161,443 messages in 35 different languages, annotated with 461,292 quality ratings. Since the data was generated by\nvolunteers, there wasn’t much control for biases. In theory, the labelers that teach\nmodels the human preference should be representative of the human population. The\ndemographic of labelers for LAION is skewed. For example, in a self-reported survey,\n90% of volunteer labelers identified as male (Köpf et al., 2023). DeepMind used simple heuristics to filter for conversations from internet data to\ntrain their model Gopher.",
+          "page_match": true,
+          "evidence_match": true,
+          "is_hit": true,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p107_p000",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 107,
+            "text": "Not everyone can afford to follow the high-quality human annotation approach. LAION, a non-profit organization, mobilized 13,500 volunteers worldwide to generate 10,000 conversations, which consist of 161,443 messages in 35 different languages, annotated with 461,292 quality ratings. Since the data was generated by\nvolunteers, there wasn’t much control for biases. In theory, the labelers that teach\nmodels the human preference should be representative of the human population. The\ndemographic of labelers for LAION is skewed. For example, in a self-reported survey,\n90% of volunteer labelers identified as male (Köpf et al., 2023). DeepMind used simple heuristics to filter for conversations from internet data to\ntrain their model Gopher.",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2441,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 0,
+            "char_length": 742
+          }
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p135_p002",
+          "page": 135,
+          "score": 0.4528883,
+          "text": "This chapter went over why it’s\noften necessary to curate training data to develop models targeting specific languages,\nespecially low-resource languages, and specific domains. After sourcing the data, model development can begin. While model training often\ndominates the headlines, an important step prior to that is architecting the model. The chapter looked into modeling choices, such as model architecture and model\nsize. The dominating architecture for language-based foundation models is transformer. This chapter explored the problems that the transformer architecture was\ndesigned to address, as well as its limitations. The scale of a model can be measured by three key numbers: the number of parameters, the number of training tokens, and the number of FLOPs needed for training.",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p135_p002",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 135,
+            "text": "This chapter went over why it’s\noften necessary to curate training data to develop models targeting specific languages,\nespecially low-resource languages, and specific domains. After sourcing the data, model development can begin. While model training often\ndominates the headlines, an important step prior to that is architecting the model. The chapter looked into modeling choices, such as model architecture and model\nsize. The dominating architecture for language-based foundation models is transformer. This chapter explored the problems that the transformer architecture was\ndesigned to address, as well as its limitations. The scale of a model can be measured by three key numbers: the number of parameters, the number of training tokens, and the number of FLOPs needed for training.",
+            "chapter": 2,
+            "section": "probabilistic_nature_of_ai",
+            "char_count": 2945,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 2,
+            "char_length": 790
+          }
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chip-huyen-ai-engineering-ch1-2_p106_p002",
+          "page": 106,
+          "score": 0.44984695,
+          "text": "Among those who labeled demonstration data for InstructGPT, ~90% have at\nleast a college degree and more than one-third have a master’s degree. If labeling\nobjects in an image might take only seconds, generating one (prompt, response) pair\ncan take up to 30 minutes, especially for tasks that involve long contexts like summarization. If it costs $10 for one (prompt, response) pair, the 13,000 pairs that OpenAI\nused for InstructGPT would cost $130,000. That doesn’t yet include the cost of\ndesigning the data (what tasks and prompts to include), recruiting labelers, and data\nquality control. 82 | Chapter 2: Understanding Foundation Models",
+          "page_match": false,
+          "evidence_match": false,
+          "is_hit": false,
+          "metadata": {
+            "chunk_id": "chip-huyen-ai-engineering-ch1-2_p106_p002",
+            "document_id": "chip-huyen-ai-engineering-ch1-2",
+            "source": "Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+            "page": 106,
+            "text": "Among those who labeled demonstration data for InstructGPT, ~90% have at\nleast a college degree and more than one-third have a master’s degree. If labeling\nobjects in an image might take only seconds, generating one (prompt, response) pair\ncan take up to 30 minutes, especially for tasks that involve long contexts like summarization. If it costs $10 for one (prompt, response) pair, the 13,000 pairs that OpenAI\nused for InstructGPT would cost $130,000. That doesn’t yet include the cost of\ndesigning the data (what tasks and prompts to include), recruiting labelers, and data\nquality control. 82 | Chapter 2: Understanding Foundation Models",
+            "chapter": 2,
+            "section": "post_training",
+            "char_count": 2155,
+            "chunk_strategy": "by_paragraph",
+            "chunk_index": 2,
+            "char_length": 642
+          }
+        }
+      ]
+    }
+  ]
+}

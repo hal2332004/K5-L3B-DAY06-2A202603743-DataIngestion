@@ -1,0 +1,579 @@
+{
+  "source_id": "chip-huyen-ai-engineering-ch1-2",
+  "title": "AI Engineering: Building Applications with Foundation Models",
+  "author": "Chip Huyen",
+  "publisher": "O'Reilly Media",
+  "publication_year": 2025,
+  "source_file": "data/Chip Huyen - AI Engineering_ Building Applications with Foundation Models-O'Reilly Media (2025).pdf",
+  "license_or_permission": "Educational / Academic Fair Use for VinAI Course Laboratory Research",
+  "accessed_at": "2026-11-14",
+  "scope_description": "Chapters 1 and 2 (Physical pages 25 to 136, inclusive). Chapter 1: Introduction to AI Engineering (pp. 25-72). Chapter 2: Understanding Foundation Models (pp. 73-136). Pages 1-24 (covers, copyright, TOC, preface) are excluded as non-content.",
+  "total_content_pages": 112,
+  "total_characters": 224576,
+  "page_range": {
+    "start_physical_page": 25,
+    "end_physical_page": 136
+  },
+  "pages": [
+    {
+      "page": 25,
+      "chapter": 1,
+      "char_count": 1715
+    },
+    {
+      "page": 26,
+      "chapter": 1,
+      "char_count": 2110
+    },
+    {
+      "page": 27,
+      "chapter": 1,
+      "char_count": 2056
+    },
+    {
+      "page": 28,
+      "chapter": 1,
+      "char_count": 2316
+    },
+    {
+      "page": 29,
+      "chapter": 1,
+      "char_count": 1185
+    },
+    {
+      "page": 30,
+      "chapter": 1,
+      "char_count": 2519
+    },
+    {
+      "page": 31,
+      "chapter": 1,
+      "char_count": 2478
+    },
+    {
+      "page": 32,
+      "chapter": 1,
+      "char_count": 2680
+    },
+    {
+      "page": 33,
+      "chapter": 1,
+      "char_count": 1822
+    },
+    {
+      "page": 34,
+      "chapter": 1,
+      "char_count": 2566
+    },
+    {
+      "page": 35,
+      "chapter": 1,
+      "char_count": 863
+    },
+    {
+      "page": 36,
+      "chapter": 1,
+      "char_count": 2648
+    },
+    {
+      "page": 37,
+      "chapter": 1,
+      "char_count": 1473
+    },
+    {
+      "page": 38,
+      "chapter": 1,
+      "char_count": 2574
+    },
+    {
+      "page": 39,
+      "chapter": 1,
+      "char_count": 1224
+    },
+    {
+      "page": 40,
+      "chapter": 1,
+      "char_count": 1920
+    },
+    {
+      "page": 41,
+      "chapter": 1,
+      "char_count": 1484
+    },
+    {
+      "page": 42,
+      "chapter": 1,
+      "char_count": 2522
+    },
+    {
+      "page": 43,
+      "chapter": 1,
+      "char_count": 934
+    },
+    {
+      "page": 44,
+      "chapter": 1,
+      "char_count": 1845
+    },
+    {
+      "page": 45,
+      "chapter": 1,
+      "char_count": 1413
+    },
+    {
+      "page": 46,
+      "chapter": 1,
+      "char_count": 2738
+    },
+    {
+      "page": 47,
+      "chapter": 1,
+      "char_count": 2892
+    },
+    {
+      "page": 48,
+      "chapter": 1,
+      "char_count": 2217
+    },
+    {
+      "page": 49,
+      "chapter": 1,
+      "char_count": 1239
+    },
+    {
+      "page": 50,
+      "chapter": 1,
+      "char_count": 2713
+    },
+    {
+      "page": 51,
+      "chapter": 1,
+      "char_count": 2306
+    },
+    {
+      "page": 52,
+      "chapter": 1,
+      "char_count": 2675
+    },
+    {
+      "page": 53,
+      "chapter": 1,
+      "char_count": 2667
+    },
+    {
+      "page": 54,
+      "chapter": 1,
+      "char_count": 2373
+    },
+    {
+      "page": 55,
+      "chapter": 1,
+      "char_count": 2357
+    },
+    {
+      "page": 56,
+      "chapter": 1,
+      "char_count": 2423
+    },
+    {
+      "page": 57,
+      "chapter": 1,
+      "char_count": 2729
+    },
+    {
+      "page": 58,
+      "chapter": 1,
+      "char_count": 1296
+    },
+    {
+      "page": 59,
+      "chapter": 1,
+      "char_count": 2645
+    },
+    {
+      "page": 60,
+      "chapter": 1,
+      "char_count": 1189
+    },
+    {
+      "page": 61,
+      "chapter": 1,
+      "char_count": 1252
+    },
+    {
+      "page": 62,
+      "chapter": 1,
+      "char_count": 861
+    },
+    {
+      "page": 63,
+      "chapter": 1,
+      "char_count": 2823
+    },
+    {
+      "page": 64,
+      "chapter": 1,
+      "char_count": 2675
+    },
+    {
+      "page": 65,
+      "chapter": 1,
+      "char_count": 2495
+    },
+    {
+      "page": 66,
+      "chapter": 1,
+      "char_count": 2967
+    },
+    {
+      "page": 67,
+      "chapter": 1,
+      "char_count": 2428
+    },
+    {
+      "page": 68,
+      "chapter": 1,
+      "char_count": 2294
+    },
+    {
+      "page": 69,
+      "chapter": 1,
+      "char_count": 2372
+    },
+    {
+      "page": 70,
+      "chapter": 1,
+      "char_count": 2279
+    },
+    {
+      "page": 71,
+      "chapter": 1,
+      "char_count": 2315
+    },
+    {
+      "page": 72,
+      "chapter": 1,
+      "char_count": 1775
+    },
+    {
+      "page": 73,
+      "chapter": 2,
+      "char_count": 1936
+    },
+    {
+      "page": 74,
+      "chapter": 2,
+      "char_count": 2950
+    },
+    {
+      "page": 75,
+      "chapter": 2,
+      "char_count": 2526
+    },
+    {
+      "page": 76,
+      "chapter": 2,
+      "char_count": 1460
+    },
+    {
+      "page": 77,
+      "chapter": 2,
+      "char_count": 618
+    },
+    {
+      "page": 78,
+      "chapter": 2,
+      "char_count": 1587
+    },
+    {
+      "page": 79,
+      "chapter": 2,
+      "char_count": 2077
+    },
+    {
+      "page": 80,
+      "chapter": 2,
+      "char_count": 1512
+    },
+    {
+      "page": 81,
+      "chapter": 2,
+      "char_count": 2030
+    },
+    {
+      "page": 82,
+      "chapter": 2,
+      "char_count": 2849
+    },
+    {
+      "page": 83,
+      "chapter": 2,
+      "char_count": 1577
+    },
+    {
+      "page": 84,
+      "chapter": 2,
+      "char_count": 2251
+    },
+    {
+      "page": 85,
+      "chapter": 2,
+      "char_count": 1488
+    },
+    {
+      "page": 86,
+      "chapter": 2,
+      "char_count": 2189
+    },
+    {
+      "page": 87,
+      "chapter": 2,
+      "char_count": 2337
+    },
+    {
+      "page": 88,
+      "chapter": 2,
+      "char_count": 808
+    },
+    {
+      "page": 89,
+      "chapter": 2,
+      "char_count": 2819
+    },
+    {
+      "page": 90,
+      "chapter": 2,
+      "char_count": 2119
+    },
+    {
+      "page": 91,
+      "chapter": 2,
+      "char_count": 811
+    },
+    {
+      "page": 92,
+      "chapter": 2,
+      "char_count": 2522
+    },
+    {
+      "page": 93,
+      "chapter": 2,
+      "char_count": 2316
+    },
+    {
+      "page": 94,
+      "chapter": 2,
+      "char_count": 2122
+    },
+    {
+      "page": 95,
+      "chapter": 2,
+      "char_count": 2408
+    },
+    {
+      "page": 96,
+      "chapter": 2,
+      "char_count": 2249
+    },
+    {
+      "page": 97,
+      "chapter": 2,
+      "char_count": 1962
+    },
+    {
+      "page": 98,
+      "chapter": 2,
+      "char_count": 2290
+    },
+    {
+      "page": 99,
+      "chapter": 2,
+      "char_count": 2294
+    },
+    {
+      "page": 100,
+      "chapter": 2,
+      "char_count": 1378
+    },
+    {
+      "page": 101,
+      "chapter": 2,
+      "char_count": 2374
+    },
+    {
+      "page": 102,
+      "chapter": 2,
+      "char_count": 2627
+    },
+    {
+      "page": 103,
+      "chapter": 2,
+      "char_count": 1081
+    },
+    {
+      "page": 104,
+      "chapter": 2,
+      "char_count": 1008
+    },
+    {
+      "page": 105,
+      "chapter": 2,
+      "char_count": 1219
+    },
+    {
+      "page": 106,
+      "chapter": 2,
+      "char_count": 2161
+    },
+    {
+      "page": 107,
+      "chapter": 2,
+      "char_count": 2456
+    },
+    {
+      "page": 108,
+      "chapter": 2,
+      "char_count": 2482
+    },
+    {
+      "page": 109,
+      "chapter": 2,
+      "char_count": 2038
+    },
+    {
+      "page": 110,
+      "chapter": 2,
+      "char_count": 142
+    },
+    {
+      "page": 111,
+      "chapter": 2,
+      "char_count": 2108
+    },
+    {
+      "page": 112,
+      "chapter": 2,
+      "char_count": 2551
+    },
+    {
+      "page": 113,
+      "chapter": 2,
+      "char_count": 1600
+    },
+    {
+      "page": 114,
+      "chapter": 2,
+      "char_count": 1712
+    },
+    {
+      "page": 115,
+      "chapter": 2,
+      "char_count": 2441
+    },
+    {
+      "page": 116,
+      "chapter": 2,
+      "char_count": 868
+    },
+    {
+      "page": 117,
+      "chapter": 2,
+      "char_count": 1579
+    },
+    {
+      "page": 118,
+      "chapter": 2,
+      "char_count": 2144
+    },
+    {
+      "page": 119,
+      "chapter": 2,
+      "char_count": 1645
+    },
+    {
+      "page": 120,
+      "chapter": 2,
+      "char_count": 2575
+    },
+    {
+      "page": 121,
+      "chapter": 2,
+      "char_count": 2541
+    },
+    {
+      "page": 122,
+      "chapter": 2,
+      "char_count": 1318
+    },
+    {
+      "page": 123,
+      "chapter": 2,
+      "char_count": 2505
+    },
+    {
+      "page": 124,
+      "chapter": 2,
+      "char_count": 1339
+    },
+    {
+      "page": 125,
+      "chapter": 2,
+      "char_count": 1489
+    },
+    {
+      "page": 126,
+      "chapter": 2,
+      "char_count": 2390
+    },
+    {
+      "page": 127,
+      "chapter": 2,
+      "char_count": 1626
+    },
+    {
+      "page": 128,
+      "chapter": 2,
+      "char_count": 1938
+    },
+    {
+      "page": 129,
+      "chapter": 2,
+      "char_count": 2684
+    },
+    {
+      "page": 130,
+      "chapter": 2,
+      "char_count": 1810
+    },
+    {
+      "page": 131,
+      "chapter": 2,
+      "char_count": 2651
+    },
+    {
+      "page": 132,
+      "chapter": 2,
+      "char_count": 1688
+    },
+    {
+      "page": 133,
+      "chapter": 2,
+      "char_count": 1869
+    },
+    {
+      "page": 134,
+      "chapter": 2,
+      "char_count": 1276
+    },
+    {
+      "page": 135,
+      "chapter": 2,
+      "char_count": 2955
+    },
+    {
+      "page": 136,
+      "chapter": 2,
+      "char_count": 859
+    }
+  ]
+}

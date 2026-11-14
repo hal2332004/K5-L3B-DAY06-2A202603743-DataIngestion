@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"doc_id, source, page, chapter, section",none,openai-text-embedding-3-small-1536d,"Fixed-size 500/50 causes broken context (lower coherence); higher chunk count",9/15,10/15,5/5,5/5,"Chunks: 539, IngestTime: 10.34s"
+B,by_paragraph,800,0,"doc_id, source, page, chapter, section",none,openai-text-embedding-3-small-1536d,"Paragraph boundaries preserve semantic coherence; higher Hit@3 than A",9/15,12/15,4/5,5/5,"Chunks: 349, IngestTime: 4.33s"
+C,by_paragraph,800,0,"doc_id, source, page, chapter, section",chapter_and_section,openai-text-embedding-3-small-1536d,"Payload filter eliminates out-of-scope noise for filtered queries",9/15,12/15,4/5,5/5,"Chunks: 349, IngestTime: 4.03s"

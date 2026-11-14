@@ -1,0 +1,224 @@
+{
+  "chunk_coherence": {
+    "samples": [
+      {
+        "position": 1,
+        "page": 25,
+        "topic": "Chapter 1 title and opening",
+        "score_A": 1,
+        "reason_A": "Fixed 500-char window cuts across the introductory paragraph halfway through a compound sentence.",
+        "score_B": 2,
+        "reason_B": "Paragraph chunking keeps heading and complete opening paragraph intact.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 2,
+        "page": 26,
+        "topic": "Definition of traditional ML vs foundation models",
+        "score_A": 1,
+        "reason_A": "Cut at 500 chars splits footnote and separates the definition from its contrast.",
+        "score_B": 2,
+        "reason_B": "Captures the full conceptual paragraph defining traditional ML and the shift to foundation models.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 3,
+        "page": 27,
+        "topic": "Autoregressive generation formula and explanation",
+        "score_A": 0,
+        "reason_A": "Cuts right in the middle of a mathematical sequence definition, leaving floating indices.",
+        "score_B": 2,
+        "reason_B": "Keeps mathematical formula and accompanying explanatory sentence together.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 4,
+        "page": 28,
+        "topic": "Three reasons why language models use tokens",
+        "score_A": 1,
+        "reason_A": "Fixed boundary cuts between item 1 and item 2 of the enumerated list.",
+        "score_B": 2,
+        "reason_B": "Groups the bullet points into a unified semantic unit.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 5,
+        "page": 29,
+        "topic": "Masked language models vs autoregressive generation",
+        "score_A": 1,
+        "reason_A": "Cuts off the sentence explaining why BERT is less popular for text generation.",
+        "score_B": 2,
+        "reason_B": "Contains the full paragraph contrasting BERT and autoregressive models.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 6,
+        "page": 30,
+        "topic": "Completion framing for diverse downstream tasks",
+        "score_A": 1,
+        "reason_A": "Fixed window breaks the example prompt 'How are you in French is...' across chunks.",
+        "score_B": 2,
+        "reason_B": "Retains the premise, the list of tasks, and the translation example in one chunk.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 7,
+        "page": 31,
+        "topic": "Next-token prediction probability distribution",
+        "score_A": 1,
+        "reason_A": "Separates the concept of softmax distribution from the token vocabulary explanation.",
+        "score_B": 2,
+        "reason_B": "Full paragraph provides complete semantic context on token probabilities.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 8,
+        "page": 32,
+        "topic": "Shift from LLMs to multimodal foundation models",
+        "score_A": 1,
+        "reason_A": "Cuts footnote 7 regarding model weights and parameters abruptly.",
+        "score_B": 2,
+        "reason_B": "Paragraph-level boundary preserves clear transition to multimodal architectures.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 9,
+        "page": 33,
+        "topic": "Self-supervision data scaling properties",
+        "score_A": 0,
+        "reason_A": "Fixed chunk ends mid-sentence on a technical term ('self-'), confusing meaning.",
+        "score_B": 2,
+        "reason_B": "Paragraph bounds keep the self-supervision argument completely self-contained.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      },
+      {
+        "position": 10,
+        "page": 34,
+        "topic": "OpenAI natural language supervision in CLIP",
+        "score_A": 1,
+        "reason_A": "Splits the CLIP training description, placing the reference (OpenAI, 2021) in the next chunk.",
+        "score_B": 2,
+        "reason_B": "Includes the full explanation of how image-text pairs were learned without manual labels.",
+        "score_C": 2,
+        "reason_C": "Identical chunking to B; fully coherent."
+      }
+    ],
+    "average_scores": {
+      "Strategy_A": 0.8,
+      "Strategy_B": 2.0,
+      "Strategy_C": 2.0
+    }
+  },
+  "metadata_usefulness": {
+    "A": {
+      "records_checked": 15,
+      "valid_records": 15,
+      "valid_ratio": "15/15",
+      "valid_pct": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliant_count": 1,
+      "filter_compliance_ratio": "1/2"
+    },
+    "B": {
+      "records_checked": 15,
+      "valid_records": 15,
+      "valid_ratio": "15/15",
+      "valid_pct": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliant_count": 1,
+      "filter_compliance_ratio": "1/2"
+    },
+    "C": {
+      "records_checked": 15,
+      "valid_records": 15,
+      "valid_ratio": "15/15",
+      "valid_pct": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliant_count": 2,
+      "filter_compliance_ratio": "2/2"
+    }
+  },
+  "grounding_quality": {
+    "A": {
+      "scores": {
+        "q16": 2,
+        "q17": 2,
+        "q18": 1,
+        "q19": 2,
+        "q20": 2
+      },
+      "summary_012": [
+        0,
+        1,
+        4
+      ],
+      "avg_score": 1.8,
+      "notes": "q18 was retrieved on page 76, but fixed-size window truncated the table header columns, requiring partial inference."
+    },
+    "B": {
+      "scores": {
+        "q16": 2,
+        "q17": 2,
+        "q18": 2,
+        "q19": 2,
+        "q20": 2
+      },
+      "summary_012": [
+        0,
+        0,
+        5
+      ],
+      "avg_score": 2.0,
+      "notes": "Paragraph chunking kept entire Table 2-1 and accompanying paragraphs intact, yielding sufficient context for all 5 test questions."
+    },
+    "C": {
+      "scores": {
+        "q16": 2,
+        "q17": 2,
+        "q18": 2,
+        "q19": 2,
+        "q20": 2
+      },
+      "summary_012": [
+        0,
+        0,
+        5
+      ],
+      "avg_score": 2.0,
+      "notes": "Metadata filtering eliminated cross-chapter distractors on q18 and q20, delivering high-confidence grounding."
+    }
+  },
+  "failure_cases": [
+    {
+      "case_id": 1,
+      "question_id": "q02",
+      "question": "Why do language models use tokens as their unit instead of words or characters?",
+      "gold_page": 28,
+      "expected_answer": "Tokens allow the model to break words into meaningful components, compared to characters.",
+      "evidence_quote": "1. Compared to characters, tokens allow the model to break words into meaningful components.",
+      "outcome_A": "Missed in Top-3 (Hits returned from pages 31, 30, 27).",
+      "outcome_B": "Missed in Top-3 (Hits returned from pages 31, 30, 27).",
+      "root_cause_analysis": "Query term overlap: Pages 30 and 31 contain heavy discussion of 'language models', 'next-token prediction', and 'vocabulary distribution', yielding higher dense embedding similarity to the generic query keywords than page 28's specific explanation of subword morphology ('cook' + 'ing'). Dense semantic retrieval struggled with the specific nuance of 'why token over word/character' without keyword boosting (BM25)."
+    },
+    {
+      "case_id": 2,
+      "question_id": "q08",
+      "question": "Why are recurrent neural networks particularly vulnerable to vanishing and exploding gradients?",
+      "gold_page": 83,
+      "expected_answer": "Because of their recursive structure requiring gradients to propagate through many steps.",
+      "evidence_quote": "RNNs are especially prone to vanishing and exploding gradients due to their recursive structure.",
+      "outcome_A": "Missed in Top-3 (Hits returned from pages 84, 82, 85).",
+      "outcome_B": "Missed in Top-3 (Hits returned from pages 84, 82, 85).",
+      "root_cause_analysis": "In Chapter 2 Section 'Model Architecture', pages 84-85 discuss Transformers and self-attention as the modern alternative to recurrent models, mentioning 'gradients' and 'attention vanishing' repeatedly. The dense model favored chunks with extensive modern Transformer discussion over the historical RNN footnote on page 83."
+    }
+  ]
+}
