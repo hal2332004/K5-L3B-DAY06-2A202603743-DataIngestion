@@ -19,6 +19,7 @@ if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
 from starter.src.embeddings import OpenAIEmbedder, JinaLateChunker
+from starter.src.rerank import CohereReranker
 from starter.src.store import QdrantVectorStore
 
 # Load environment
@@ -32,10 +33,13 @@ else:
     load_dotenv()
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
+cohere_api_key = os.getenv("COHERE_API_KEY")
+
 embedder = OpenAIEmbedder(model_name="text-embedding-3-small", dimensions=1536)
 jina_embedder = JinaLateChunker(model_name="jina-embeddings-v3", dimensions=1024)
 store = QdrantVectorStore(dimensions=1536)
 llm_client = OpenAI(api_key=openai_api_key)
+reranker = CohereReranker(model="rerank-v3.5") if cohere_api_key else None
 
 # Load benchmark questions if available
 benchmark_file = project_root / "benchmark" / "questions.json"
@@ -65,9 +69,13 @@ class RAGHandler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps(benchmark_questions, ensure_ascii=False).encode("utf-8"))
         elif self.path == "/api/summary":
             summary_file = project_root / "results" / "summary_metrics.json"
+            rerank_file = project_root / "results" / "rerank_metrics.json"
             if summary_file.exists():
                 with open(summary_file, "r", encoding="utf-8") as f:
                     summary_data = json.load(f)
+                if rerank_file.exists():
+                    with open(rerank_file, "r", encoding="utf-8") as rf:
+                        summary_data["rerank_metrics"] = json.load(rf)
                 self.send_json(summary_data)
             else:
                 self.send_json({"error": "Summary metrics not found yet"}, status=404)
@@ -96,8 +104,31 @@ class RAGHandler(http.server.SimpleHTTPRequestHandler):
                     q_vec = embedder.embed_query(query)
 
                 # 2. Retrieve from Qdrant Cloud
+                use_rerank = bool(data.get("rerank", False))
                 filters = custom_filter if strategy == "C" else None
-                hits = store.search(strategy=strategy, query_vector=q_vec, top_k=top_k, filters=filters)
+                search_k = max(10, top_k * 3) if (use_rerank and reranker) else top_k
+                hits = store.search(strategy=strategy, query_vector=q_vec, top_k=search_k, filters=filters)
+
+                # 2b. Cohere Rerank if enabled
+                if use_rerank and reranker and hits:
+                    doc_texts = [h.get("text", "") for h in hits]
+                    try:
+                        cohere_res = reranker.rerank(query=query, documents=doc_texts, top_n=top_k)
+                        reranked_hits = []
+                        for cr in cohere_res:
+                            orig_idx = cr["index"]
+                            item = dict(hits[orig_idx])
+                            item["original_rank"] = orig_idx + 1
+                            item["original_score"] = item.get("score")
+                            item["score"] = cr["relevance_score"]
+                            item["reranked"] = True
+                            reranked_hits.append(item)
+                        hits = reranked_hits
+                    except Exception as err:
+                        print(f"[Rerank] Cohere rerank fallback: {err}")
+                        hits = hits[:top_k]
+                else:
+                    hits = hits[:top_k]
 
                 # 3. Construct context
                 context_blocks = []
@@ -138,6 +169,7 @@ class RAGHandler(http.server.SimpleHTTPRequestHandler):
                 response_payload = {
                     "query": query,
                     "strategy": strategy,
+                    "rerank": use_rerank,
                     "answer": answer,
                     "hits": hits
                 }
