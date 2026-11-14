@@ -32,18 +32,19 @@ class QdrantVectorStore:
         self.dimensions = dimensions
         self.client = QdrantClient(url=self.url, api_key=self.api_key, timeout=20)
 
-    def create_schema(self, strategy: str) -> None:
+    def create_schema(self, strategy: str, dimensions: int | None = None) -> None:
         """Create or recreate collection for a strategy and build payload indexes for filtering."""
         col_name = f"strategy_{strategy.lower()}"
+        dims = dimensions or self.dimensions
         if self.client.collection_exists(col_name):
             print(f"[Store] Recreating existing collection: {col_name}")
             self.client.delete_collection(col_name)
 
-        print(f"[Store] Creating collection: {col_name} (dimensions={self.dimensions}, metric=Cosine)")
+        print(f"[Store] Creating collection: {col_name} (dimensions={dims}, metric=Cosine)")
         self.client.create_collection(
             collection_name=col_name,
             vectors_config=models.VectorParams(
-                size=self.dimensions,
+                size=dims,
                 distance=models.Distance.COSINE
             )
         )

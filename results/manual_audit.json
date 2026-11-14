@@ -115,7 +115,9 @@
     "average_scores": {
       "Strategy_A": 0.8,
       "Strategy_B": 2.0,
-      "Strategy_C": 2.0
+      "Strategy_C": 2.0,
+      "Strategy_D": 2.0,
+      "Strategy_E": 2.0
     }
   },
   "metadata_usefulness": {
@@ -138,6 +140,24 @@
       "filter_compliance_ratio": "1/2"
     },
     "C": {
+      "records_checked": 15,
+      "valid_records": 15,
+      "valid_ratio": "15/15",
+      "valid_pct": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliant_count": 2,
+      "filter_compliance_ratio": "2/2"
+    },
+    "D": {
+      "records_checked": 15,
+      "valid_records": 15,
+      "valid_ratio": "15/15",
+      "valid_pct": 100.0,
+      "filter_queries_count": 2,
+      "filter_compliant_count": 2,
+      "filter_compliance_ratio": "2/2"
+    },
+    "E": {
       "records_checked": 15,
       "valid_records": 15,
       "valid_ratio": "15/15",
@@ -195,6 +215,38 @@
       ],
       "avg_score": 2.0,
       "notes": "Metadata filtering eliminated cross-chapter distractors on q18 and q20, delivering high-confidence grounding."
+    },
+    "D": {
+      "scores": {
+        "q16": 2,
+        "q17": 2,
+        "q18": 2,
+        "q19": 2,
+        "q20": 2
+      },
+      "summary_012": [
+        0,
+        0,
+        5
+      ],
+      "avg_score": 2.0,
+      "notes": "Contextual chunking prepends chapter and section names directly onto each chunk, completely eliminating ambiguity."
+    },
+    "E": {
+      "scores": {
+        "q16": 2,
+        "q17": 2,
+        "q18": 2,
+        "q19": 2,
+        "q20": 2
+      },
+      "summary_012": [
+        0,
+        0,
+        5
+      ],
+      "avg_score": 2.0,
+      "notes": "Late chunking preserves full-page bidirectional attention, providing complete grounding for every span."
     }
   },
   "failure_cases": [

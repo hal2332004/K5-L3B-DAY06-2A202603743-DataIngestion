@@ -18,7 +18,7 @@ project_root = Path(__file__).resolve().parents[1]
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
-from starter.src.embeddings import OpenAIEmbedder
+from starter.src.embeddings import OpenAIEmbedder, JinaLateChunker
 from starter.src.store import QdrantVectorStore
 
 # Load environment
@@ -33,6 +33,7 @@ else:
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 embedder = OpenAIEmbedder(model_name="text-embedding-3-small", dimensions=1536)
+jina_embedder = JinaLateChunker(model_name="jina-embeddings-v3", dimensions=1024)
 store = QdrantVectorStore(dimensions=1536)
 llm_client = OpenAI(api_key=openai_api_key)
 
@@ -62,6 +63,14 @@ class RAGHandler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             self.wfile.write(json.dumps(benchmark_questions, ensure_ascii=False).encode("utf-8"))
+        elif self.path == "/api/summary":
+            summary_file = project_root / "results" / "summary_metrics.json"
+            if summary_file.exists():
+                with open(summary_file, "r", encoding="utf-8") as f:
+                    summary_data = json.load(f)
+                self.send_json(summary_data)
+            else:
+                self.send_json({"error": "Summary metrics not found yet"}, status=404)
         else:
             super().do_GET()
 
@@ -81,7 +90,10 @@ class RAGHandler(http.server.SimpleHTTPRequestHandler):
                     return
 
                 # 1. Embed query
-                q_vec = embedder.embed_query(query)
+                if strategy == "E":
+                    q_vec = jina_embedder.embed_query(query)
+                else:
+                    q_vec = embedder.embed_query(query)
 
                 # 2. Retrieve from Qdrant Cloud
                 filters = custom_filter if strategy == "C" else None

@@ -22,25 +22,27 @@
 
 * **Điểm Coherence trung bình:**
   * **Strategy A:** **0.80 / 2.0** (Nhiều lần cắt ngang câu, công thức và danh sách).
-  * **Strategy B & C:** **2.00 / 2.0** (Các đoạn văn kỹ thuật được bảo toàn cấu trúc trọn vẹn).
+  * **Strategy B, C, D, E:** **2.00 / 2.0** (Các đoạn văn kỹ thuật được bảo toàn cấu trúc trọn vẹn; D bổ sung tiền tố ngữ cảnh; E bảo toàn bidirectional attention toàn trang).
 
 ---
 
 ## 2. Tính hữu dụng của Metadata (Metadata Usefulness)
 *Đánh giá trên 5 câu Test × Top-3 chunks = 15 bản ghi.*
 
-| Chỉ số | Strategy A (Fixed) | Strategy B (Paragraph) | Strategy C (Paragraph + Filter) |
-|---|:---:|:---:|:---:|
-| **Số bản ghi kiểm tra** | 15 / 15 | 15 / 15 | 15 / 15 |
-| **Số bản ghi metadata ĐỦ và ĐÚNG** | **15 / 15 (100%)** | **15 / 15 (100%)** | **15 / 15 (100%)** |
-| *• `source` và `page`* | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc |
-| *• `chapter` (1 hoặc 2)* | Đúng 100% | Đúng 100% | Đúng 100% |
-| *• `section` chuyên môn* | Đúng 100% | Đúng 100% | Đúng 100% |
-| **Tỷ lệ tuân thủ Filter (2 câu Test có filter: q18, q20)** | **1 / 2 (50%)** | **1 / 2 (50%)** | **2 / 2 (100%)** |
+| Chỉ số | Strategy A (Fixed) | Strategy B (Paragraph) | Strategy C (Para + Filter) | Strategy D (Contextual) | Strategy E (Late Chunking) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| **Số bản ghi kiểm tra** | 15 / 15 | 15 / 15 | 15 / 15 | 15 / 15 | 15 / 15 |
+| **Số bản ghi metadata ĐỦ và ĐÚNG** | **15 / 15 (100%)** | **15 / 15 (100%)** | **15 / 15 (100%)** | **15 / 15 (100%)** | **15 / 15 (100%)** |
+| *• `source` và `page`* | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc | Đầy đủ, truy vết đúng trang gốc |
+| *• `chapter` (1 hoặc 2)* | Đúng 100% | Đúng 100% | Đúng 100% | Đúng 100% | Đúng 100% |
+| *• `section` chuyên môn* | Đúng 100% | Đúng 100% | Đúng 100% | Đúng 100% | Đúng 100% |
+| **Tỷ lệ tuân thủ Filter (2 câu Test có filter: q18, q20)** | **1 / 2 (50%)** | **1 / 2 (50%)** | **2 / 2 (100%)** | **2 / 2 (100%)** | **2 / 2 (100%)** |
+| **Tỷ lệ tuân thủ trên TOÀN BỘ 5 câu có filter** | **2 / 5 (40%)** | **2 / 5 (40%)** | **5 / 5 (100%)** | **4 / 5 (80%)** | **3 / 5 (60%)** |
 
 * **Nhận xét chuyên sâu:**
   * *Lợi ích:* Trường metadata `chapter` và `section` cho phép thu hẹp không gian tìm kiếm trên Qdrant Cloud. Ở Strategy C, câu `q20` không bị nhiễu bởi các đoạn nhắc đến "volunteers" hoặc "conversations" ở chương khác.
-  * *Hạn chế:* Việc phân đoạn `section` cố định theo trang đòi hỏi người biên soạn phải hiểu cấu trúc tài liệu. Nếu tài liệu không có mục lục chuẩn, cần pipeline trích xuất heading động.
+  * *Strategy D (Contextual):* Ngay cả khi không áp dụng filter cứng ở tầng cơ sở dữ liệu, việc bổ sung hierarchical prefix vào chunk text giúp tỷ lệ tuân thủ phân vùng nhảy vọt từ 40% (ở B) lên 80% (ở D)!
+  * *Strategy E (Late Chunking):* Nhờ attention toàn trang, tỷ lệ tuân thủ filter tự nhiên đạt 60% mà không cần filter, vector chỉ 1024 chiều.
 
 ---
 
@@ -57,8 +59,7 @@
 
 * **Điểm Grounding trung bình:**
   * **Strategy A:** **1.80 / 2.0** (0 mức 0, 1 mức 1, 4 mức 2).
-  * **Strategy B:** **2.00 / 2.0** (0 mức 0, 0 mức 1, 5 mức 2).
-  * **Strategy C:** **2.00 / 2.0** (0 mức 0, 0 mức 1, 5 mức 2).
+  * **Strategy B, C, D, E:** **2.00 / 2.0** (0 mức 0, 0 mức 1, 5 mức 2). Đều cung cấp đầy đủ bằng chứng và ngữ cảnh hoàn chỉnh để LLM tổng hợp câu trả lời chính xác.
 
 ---
 

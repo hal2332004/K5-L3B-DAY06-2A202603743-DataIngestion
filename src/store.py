@@ -1,5 +1,6 @@
 """Store and search vectors using Qdrant Cloud with metadata filtering."""
 import os
+import time
 import uuid
 from pathlib import Path
 from typing import Any
@@ -30,20 +31,21 @@ class QdrantVectorStore:
             raise ValueError("QDRANT_URL and QDRANT_API_KEY must be set in .env")
 
         self.dimensions = dimensions
-        self.client = QdrantClient(url=self.url, api_key=self.api_key, timeout=20)
+        self.client = QdrantClient(url=self.url, api_key=self.api_key, timeout=60)
 
-    def create_schema(self, strategy: str) -> None:
+    def create_schema(self, strategy: str, dimensions: int | None = None) -> None:
         """Create or recreate collection for a strategy and build payload indexes for filtering."""
         col_name = f"strategy_{strategy.lower()}"
+        dims = dimensions or self.dimensions
         if self.client.collection_exists(col_name):
             print(f"[Store] Recreating existing collection: {col_name}")
             self.client.delete_collection(col_name)
 
-        print(f"[Store] Creating collection: {col_name} (dimensions={self.dimensions}, metric=Cosine)")
+        print(f"[Store] Creating collection: {col_name} (dimensions={dims}, metric=Cosine)")
         self.client.create_collection(
             collection_name=col_name,
             vectors_config=models.VectorParams(
-                size=self.dimensions,
+                size=dims,
                 distance=models.Distance.COSINE
             )
         )
@@ -87,7 +89,16 @@ class QdrantVectorStore:
                 }
                 points.append(models.PointStruct(id=pt_id, vector=vec, payload=payload))
 
-            self.client.upsert(collection_name=col_name, points=points)
+            # Retry on transient network timeout
+            for attempt in range(1, 4):
+                try:
+                    self.client.upsert(collection_name=col_name, points=points)
+                    break
+                except Exception as exc:
+                    if attempt == 3:
+                        raise exc
+                    print(f"[Store] Upsert attempt {attempt} failed ({exc}). Retrying in 2s...")
+                    time.sleep(2)
 
         print(f"[Store] Successfully indexed {total} points into {col_name}")
 
