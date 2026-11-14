@@ -1,6 +1,6 @@
 # Day 06 · Data Ingestion Engineering Lab
 
-**Học viên:** (Họ và tên học viên)  
+**Học viên:** Hồ An Lộc  
 **MSSV:** 2A202603743 · **Lớp:** L3B  
 **Corpus:** *AI Engineering: Building Applications with Foundation Models* (Chip Huyen, O'Reilly Media 2025) — Chapters 1 & 2 (112 content pages, 224,576 characters).
 
